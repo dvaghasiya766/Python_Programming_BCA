@@ -15,6 +15,7 @@
   --editor: #172131;
   --editor-line: #253349;
   --shadow: 0 18px 45px rgba(35, 53, 82, 0.08);
+  --editor-line-height: 24px;
 }
 
 * {
@@ -173,18 +174,21 @@ h2 {
   position: absolute;
   inset: 0 auto 0 0;
   width: 45px;
-  padding-top: 18px;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 17px;
   border-right: 1px solid var(--editor-line);
   color: #718098;
   font:
-    11px/1.85 "DM Mono",
+    11px/var(--editor-line-height) "DM Mono",
     monospace;
   text-align: right;
   user-select: none;
 }
 .line-numbers div {
   padding-right: 11px;
-  height: 20px;
+  height: var(--editor-line-height);
+  line-height: var(--editor-line-height);
 }
 .line-numbers div.active {
   color: #fff;
@@ -202,7 +206,7 @@ h2 {
   background: transparent;
   color: #eef4ff;
   font:
-    13px/1.85 "DM Mono",
+    13px/var(--editor-line-height) "DM Mono",
     monospace;
   tab-size: 4;
   white-space: pre;

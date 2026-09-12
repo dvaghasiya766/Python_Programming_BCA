@@ -33,9 +33,15 @@ function formatValue(value) {
 
 function syncLineNumbers() {
   const lines = editor.value.split("\n");
+  const scrollTop = editor.scrollTop;
   lineNumbers.innerHTML = lines
     .map((_, index) => `<div>${index + 1}</div>`)
     .join("");
+  lineNumbers.scrollTop = scrollTop;
+}
+
+function syncEditorScroll() {
+  lineNumbers.scrollTop = editor.scrollTop;
 }
 
 function parseValue(raw, state) {
@@ -213,9 +219,7 @@ document.querySelector("#run-button").addEventListener("click", runProgram);
 document.querySelector("#step-button").addEventListener("click", nextStep);
 document.querySelector("#reset-button").addEventListener("click", reset);
 editor.addEventListener("input", syncLineNumbers);
-editor.addEventListener("scroll", () => {
-  lineNumbers.scrollTop = editor.scrollTop;
-});
+editor.addEventListener("scroll", syncEditorScroll);
 document.querySelector("#theme-button").addEventListener("click", (event) => {
   document.body.classList.toggle("dark");
   event.currentTarget.textContent = document.body.classList.contains("dark")
