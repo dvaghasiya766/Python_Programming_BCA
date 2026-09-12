@@ -897,6 +897,54 @@
                         </div>
                     </div>
 
+                    <div class="identifier-simulation">
+                        <div class="simulation-heading">
+                            <span class="feature-number">TRY IT</span>
+                            <h3>Identifier Naming Simulator</h3>
+                            <p>Enter a variable name and check whether it follows Python's naming rules.</p>
+                        </div>
+
+                        <div class="simulation-controls">
+                            <label for="identifier-input">Variable name</label>
+                            <div class="identifier-input-row">
+                                <input id="identifier-input" type="text" value="student_name" autocomplete="off"
+                                    spellcheck="false" aria-describedby="identifier-result">
+                                <button type="button" class="check-button" id="check-identifier">Check name</button>
+                            </div>
+                            <div class="preset-list" aria-label="Example names">
+                                <span>Try:</span>
+                                <button type="button" class="preset-button"
+                                    data-identifier="student_name">student_name</button>
+                                <button type="button" class="preset-button" data-identifier="2marks">2marks</button>
+                                <button type="button" class="preset-button" data-identifier="class">class</button>
+                            </div>
+                        </div>
+
+                        <div class="simulation-result valid-result" id="identifier-result" aria-live="polite">
+                            <strong id="result-title">Valid identifier</strong>
+                            <span id="result-message">student_name can be used as a Python variable name.</span>
+                        </div>
+
+                        <div class="rule-checks" aria-label="Identifier rule checks">
+                            <div class="rule-check passed" id="rule-start">
+                                <span class="check-icon">✓</span>
+                                <span>Starts with a letter or underscore</span>
+                            </div>
+                            <div class="rule-check passed" id="rule-characters">
+                                <span class="check-icon">✓</span>
+                                <span>Contains only letters, digits or underscores</span>
+                            </div>
+                            <div class="rule-check passed" id="rule-keyword">
+                                <span class="check-icon">✓</span>
+                                <span>Is not a Python keyword</span>
+                            </div>
+                            <div class="rule-check passed" id="rule-readable">
+                                <span class="check-icon">✓</span>
+                                <span>Uses a clear, descriptive name</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </section>
@@ -1021,6 +1069,57 @@
                         <div class="callout">
                             <strong>IMMUTABLE</strong><br><br>
                             Existing object → <strong>CANNOT CHANGE</strong>
+                        </div>
+                    </div>
+
+                    <div class="mutability-simulation">
+                        <div class="simulation-heading">
+                            <span class="feature-number">TRY IT</span>
+                            <h3>Mutability Simulator</h3>
+                            <p>Choose a Python object and simulate changing its value.</p>
+                        </div>
+
+                        <div class="simulation-controls">
+                            <label for="object-type">Choose an object</label>
+                            <div class="object-choice-row">
+                                <select id="object-type">
+                                    <option value="list">List: [1, 2, 3]</option>
+                                    <option value="dict">Dictionary: {"name": "Asha"}</option>
+                                    <option value="set">Set: {1, 2, 3}</option>
+                                    <option value="string">String: "Python"</option>
+                                    <option value="integer">Integer: 10</option>
+                                    <option value="tuple">Tuple: (1, 2, 3)</option>
+                                </select>
+                                <button type="button" class="check-button" id="mutate-object">Try to change it</button>
+                            </div>
+                        </div>
+
+                        <div class="object-preview">
+                            <div class="object-state">
+                                <span class="state-label">BEFORE</span>
+                                <code id="object-before">[1, 2, 3]</code>
+                            </div>
+                            <div class="object-arrow">→</div>
+                            <div class="object-state">
+                                <span class="state-label">AFTER</span>
+                                <code id="object-after">[1, 99, 3]</code>
+                            </div>
+                        </div>
+                        <div class="identity-result" id="identity-result">
+                            <span class="state-label">OBJECT ID CHECK</span>
+                            <strong id="identity-title">Same id: existing object updated</strong>
+                            <code id="identity-message">id(numbers) before == id(numbers) after</code>
+                        </div>
+                        <div class="mutation-code-panel">
+                            <div class="code-panel-label">PYTHON CODE</div>
+                            <pre id="mutation-code"><code>numbers = [1, 2, 3]
+numbers[1] = 99
+print(numbers)  # [1, 99, 3]</code></pre>
+                        </div>
+
+                        <div class="simulation-result valid-result" id="mutability-result" aria-live="polite">
+                            <strong id="mutability-title">Mutable object</strong>
+                            <span id="mutability-message">The existing list can be changed directly.</span>
                         </div>
                     </div>
                 </div>
