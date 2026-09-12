@@ -1,0 +1,1375 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 | Introduction to Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="badge">BCA · SEMESTER 5 · PYTHON PROGRAMMING</div>
+            <h1>Unit 1</h1>
+            <h2>Introduction to Python</h2>
+            <p>
+                Understand the foundations of Python programming — from programming
+                languages and Python's history to its features, execution process,
+                syntax, semantics, identifiers, comments, docstrings, and object
+                mutability.
+            </p>
+            <div class="python-mark">🐍</div>
+        </div>
+    </header>
+    <div class="nav-wrap">
+        <div class="container nav">
+            <a href="#overview">Overview</a>
+            <a href="#languages">Programming Languages</a>
+            <a href="#genesis">Python Genesis</a>
+            <a href="#features">Features</a>
+            <a href="#advantages">Advantages & Disadvantages</a>
+            <a href="#execution">Execution</a>
+            <a href="#ides">IDEs</a>
+            <a href="#syntax">Syntax</a>
+            <a href="#identifiers">Identifiers</a>
+            <a href="#comments">Comments</a>
+            <a href="#mutable">Mutability</a>
+            <a href="#instructions">Instructions</a>
+            <a href="https://docs.google.com/document/d/1AenZufJcJB1ss53n-WGQfXXg-Kap3PE_aBfhvKN_ul4/preview"
+                target="_blank">Guide</a>
+        </div>
+
+    </div>
+
+
+    <main>
+
+        <div class="container">
+            <section class="section" id="overview">
+
+                <div class="section-label">UNIT ROADMAP</div>
+
+                <h2 class="section-title">What You Will Learn</h2>
+
+                <p class="section-intro">
+                    This unit establishes the conceptual foundation required before
+                    writing Python programs.
+                </p>
+
+                <div class="roadmap">
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">01</div>
+                        <div>Programming Languages</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">02</div>
+                        <div>Python Genesis</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">03</div>
+                        <div>Features</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">04</div>
+                        <div>Advantages</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">05</div>
+                        <div>Limitations</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">06</div>
+                        <div>Execution</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">07</div>
+                        <div>IDE</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">08</div>
+                        <div>Syntax</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">09</div>
+                        <div>Identifiers</div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <div class="roadmap-number">10</div>
+                        <div>Mutability</div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="languages">
+
+                <div class="section-label">01 · FUNDAMENTALS</div>
+
+                <h2 class="section-title">Programming Languages</h2>
+
+                <div class="card">
+
+                    <p>
+                        A <strong>programming language</strong> is a formal system of
+                        instructions (code) with specific syntax and rules that allows humans
+                        to communicate with computers.
+                    </p>
+
+                    <p>
+                        Programming languages translate human logic into instructions that
+                        can ultimately be executed by a computer.
+                    </p>
+
+                    <div class="flow">
+
+                        <div class="flow-box">
+                            <div class="flow-icon">🧠</div>
+                            <div class="flow-title">Human Thought</div>
+                            <div class="flow-desc">Ideas · Logic · Problem Solving</div>
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="flow-box">
+                            <div class="flow-icon">⌨</div>
+                            <div class="flow-title">Programming Language</div>
+                            <div class="flow-desc">Syntax · Rules · Instructions</div>
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="flow-box">
+                            <div class="flow-icon">⚙</div>
+                            <div class="flow-title">Computer</div>
+                            <div class="flow-desc">Machine-executable commands</div>
+                        </div>
+
+                    </div>
+
+                    <h3>Evolution of Programming Languages</h3>
+
+                    <div class="flow">
+
+                        <div class="flow-box">
+                            <div class="flow-title">Machine Code</div>
+                            <div class="flow-desc">Binary instructions</div>
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="flow-box">
+                            <div class="flow-title">Assembly Language</div>
+                            <div class="flow-desc">Symbolic instructions</div>
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="flow-box">
+                            <div class="flow-title">High-Level Languages</div>
+                            <div class="flow-desc">Human-friendly syntax</div>
+                        </div>
+
+                    </div>
+
+                    <div class="callout">
+                        <strong>Key Idea:</strong>
+                        A programming language acts as a bridge between
+                        <strong>human thought</strong> and <strong>digital action</strong>.
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="genesis">
+
+                <div class="section-label">02 · HISTORY</div>
+
+                <h2 class="section-title">Python Genesis</h2>
+
+                <div class="card">
+
+                    <p>
+                        Python was developed by <strong>Guido van Rossum</strong>, a Dutch
+                        programmer, in the Netherlands.
+                    </p>
+
+                    <p>
+                        Work on Python began in <strong>December 1989</strong> at the
+                        <strong>Centrum Wiskunde &amp; Informatica (CWI)</strong>.
+                    </p>
+
+                    <p>
+                        It was conceived as a hobby project to succeed the
+                        <strong>ABC programming language</strong> and address some of
+                        its limitations.
+                    </p>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">89</div>
+                            <div class="timeline-year">1989</div>
+                            <div class="timeline-text">Python development begins</div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">91</div>
+                            <div class="timeline-year">1991</div>
+                            <div class="timeline-text">Python 0.9.0 released</div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">18</div>
+                            <div class="timeline-year">2018</div>
+                            <div class="timeline-text">BDFL role ends</div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">NOW</div>
+                            <div class="timeline-year">Today</div>
+                            <div class="timeline-text">Global Python ecosystem</div>
+                        </div>
+
+                    </div>
+
+                    <h3 style="margin-top:35px;">Python's Design Vision</h3>
+
+                    <div class="grid grid-2">
+
+                        <div class="feature">
+                            <div class="feature-number">01</div>
+                            <h3>Easy to Learn</h3>
+                            <p>Readable syntax and clear programming structure.</p>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-number">02</div>
+                            <h3>Powerful</h3>
+                            <p>Capable of handling simple as well as complex tasks.</p>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-number">03</div>
+                            <h3>Portable</h3>
+                            <p>Designed to operate across different platforms.</p>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-number">04</div>
+                            <h3>Open Source</h3>
+                            <p>Supports community collaboration and development.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="callout gold">
+                        <strong>Did You Know?</strong>
+                        The name <strong>Python</strong> was inspired by the BBC comedy
+                        series <strong>"Monty Python's Flying Circus"</strong>.
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="features">
+
+                <div class="section-label">03 · CORE CONCEPTS</div>
+
+                <h2 class="section-title">Features of Python</h2>
+
+                <p class="section-intro">
+                    Python's design combines readability, flexibility, portability and
+                    a large ecosystem, making it suitable for a wide range of applications.
+                </p>
+
+                <div class="grid grid-3">
+
+                    <div class="feature">
+                        <div class="feature-number">01</div>
+                        <h3>Easy to Learn and Use</h3>
+                        <p>
+                            Clean syntax and English keywords reduce the learning curve and allow
+                            developers to focus on problem solving.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">02</div>
+                        <h3>Interpreted Language</h3>
+                        <p>
+                            Python code is processed by an interpreter, providing quick feedback
+                            during development.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">03</div>
+                        <h3>Dynamically Typed</h3>
+                        <p>
+                            Variable types are determined at runtime rather than requiring
+                            explicit declarations.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">04</div>
+                        <h3>Free and Open Source</h3>
+                        <p>
+                            Python can be used, modified and distributed freely.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">05</div>
+                        <h3>Extensive Standard Library</h3>
+                        <p>
+                            A large collection of modules provides ready-made functionality.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">06</div>
+                        <h3>Object-Oriented Support</h3>
+                        <p>
+                            Supports classes, objects, inheritance and polymorphism.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">07</div>
+                        <h3>Multi-Paradigm</h3>
+                        <p>
+                            Supports procedural, object-oriented and functional programming styles.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">08</div>
+                        <h3>Cross-Platform</h3>
+                        <p>
+                            Programs can run on Windows, macOS and Linux with little modification.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">09</div>
+                        <h3>Extensible &amp; Embeddable</h3>
+                        <p>
+                            Functionality can be extended using languages such as C or C++.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">10</div>
+                        <h3>Large Community</h3>
+                        <p>
+                            A large community provides learning resources, collaboration and
+                            troubleshooting support.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">11</div>
+                        <h3>GUI Programming</h3>
+                        <p>
+                            Libraries such as Tkinter and PyQt support desktop GUI development.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-number">12</div>
+                        <h3>Automatic Memory Management</h3>
+                        <p>
+                            Python handles memory management automatically, including garbage
+                            collection.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="advantages">
+
+                <div class="section-label">04 · BENEFITS</div>
+
+                <h2 class="section-title">Advantages of Python</h2>
+
+                <div class="grid grid-4">
+
+                    <div class="card pro-card">
+                        <div class="number">01</div>
+                        <h3>Simplicity</h3>
+                        <p>
+                            Intuitive syntax makes Python easier to learn and apply.
+                        </p>
+                    </div>
+
+                    <div class="card pro-card">
+                        <div class="number">02</div>
+                        <h3>Standard Library</h3>
+                        <p>
+                            Ready-made modules reduce development effort.
+                        </p>
+                    </div>
+
+                    <div class="card pro-card">
+                        <div class="number">03</div>
+                        <h3>Portability</h3>
+                        <p>
+                            Python programs can operate across multiple platforms.
+                        </p>
+                    </div>
+
+                    <div class="card pro-card">
+                        <div class="number">04</div>
+                        <h3>Modern Applications</h3>
+                        <p>
+                            Used in Web Development, AI, Data Science, Cybersecurity and more.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="disadvantages">
+
+                <div class="section-label">05 · LIMITATIONS</div>
+
+                <h2 class="section-title">Disadvantages of Python</h2>
+
+                <div class="grid grid-2">
+
+                    <div class="card con-card">
+                        <div class="number">01</div>
+                        <h3>Reduced Execution Speed</h3>
+                        <p>
+                            Python generally executes more slowly than compiled alternatives
+                            such as C++.
+                        </p>
+                    </div>
+
+                    <div class="card con-card">
+                        <div class="number">02</div>
+                        <h3>Dynamic Typing Risks</h3>
+                        <p>
+                            Some type-related errors may appear only during program execution.
+                        </p>
+                    </div>
+
+                    <div class="card con-card">
+                        <div class="number">03</div>
+                        <h3>Memory Consumption</h3>
+                        <p>
+                            High-level abstractions and automatic memory management can result
+                            in higher memory usage.
+                        </p>
+                    </div>
+
+                    <div class="card con-card">
+                        <div class="number">04</div>
+                        <h3>Mobile Development</h3>
+                        <p>
+                            Python is not inherently optimised for native iOS and Android
+                            application development.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="execution">
+
+                <div class="section-label">06 · PROGRAM EXECUTION</div>
+
+                <h2 class="section-title">Interpreter vs Compiler</h2>
+
+                <div class="card">
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Compiled Languages</th>
+                                    <th>Interpreted Languages</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Translation Time</td>
+                                    <td>Before execution</td>
+                                    <td>During execution</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Execution Speed</td>
+                                    <td>Generally faster</td>
+                                    <td>Generally slower</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Portability</td>
+                                    <td>Often platform-dependent binary</td>
+                                    <td>Highly portable source</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Error Detection</td>
+                                    <td>During compilation</td>
+                                    <td>During execution</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Development Cycle</td>
+                                    <td>Requires recompilation</td>
+                                    <td>Faster feedback</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Examples</td>
+                                    <td>C, C++, Rust, Go</td>
+                                    <td>Python, JavaScript, Ruby</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="callout">
+                        <strong>Important:</strong>
+                        The terms "compiled" and "interpreted" describe common implementation
+                        models. Modern language implementations can combine compilation and
+                        interpretation techniques.
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section">
+
+                <div class="section-label">07 · EXECUTION CYCLE</div>
+
+                <h2 class="section-title">Python Code Execution Cycle</h2>
+
+                <p class="section-intro">
+                    Python source code passes through several stages before the program
+                    produces its result.
+                </p>
+
+                <div class="execution">
+
+                    <div class="execution-step">
+                        <div class="step-number">01</div>
+                        <h3>Lexing</h3>
+                        <p>
+                            Source code is broken into meaningful tokens such as keywords,
+                            identifiers, operators and literals.
+                        </p>
+                    </div>
+
+                    <div class="execution-step">
+                        <div class="step-number">02</div>
+                        <h3>Parsing</h3>
+                        <p>
+                            Tokens are organised into a hierarchical structure called an
+                            Abstract Syntax Tree (AST).
+                        </p>
+                    </div>
+
+                    <div class="execution-step">
+                        <div class="step-number">03</div>
+                        <h3>Bytecode</h3>
+                        <p>
+                            The AST is compiled into platform-independent bytecode for execution.
+                        </p>
+                    </div>
+
+                    <div class="execution-step">
+                        <div class="step-number">04</div>
+                        <h3>PVM</h3>
+                        <p>
+                            The Python Virtual Machine executes the bytecode instructions.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flow" style="margin-top:35px;">
+
+                    <div class="flow-box">
+                        <div class="flow-title">Python Source Code</div>
+                        <div class="flow-desc">program.py</div>
+                    </div>
+
+                    <div class="arrow">→</div>
+
+                    <div class="flow-box">
+                        <div class="flow-title">Tokens + AST</div>
+                        <div class="flow-desc">Lexing + Parsing</div>
+                    </div>
+
+                    <div class="arrow">→</div>
+
+                    <div class="flow-box">
+                        <div class="flow-title">Bytecode</div>
+                        <div class="flow-desc">Intermediate instructions</div>
+                    </div>
+
+                </div>
+
+                <div class="flow">
+
+                    <div class="flow-box">
+                        <div class="flow-title">Python Virtual Machine</div>
+                        <div class="flow-desc">Executes bytecode</div>
+                    </div>
+
+                    <div class="arrow">→</div>
+
+                    <div class="flow-box">
+                        <div class="flow-title">Runtime</div>
+                        <div class="flow-desc">Memory · Objects · Scope</div>
+                    </div>
+
+                    <div class="arrow">→</div>
+
+                    <div class="flow-box">
+                        <div class="flow-title">Output</div>
+                        <div class="flow-desc">Program result</div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="ides">
+
+                <div class="section-label">08 · DEVELOPMENT TOOLS</div>
+
+                <h2 class="section-title">Python IDEs &amp; Code Editors</h2>
+
+                <p class="section-intro">
+                    An Integrated Development Environment (IDE) provides tools for
+                    writing, running and debugging programs.
+                </p>
+
+                <div class="grid grid-3">
+
+                    <div class="card ide">
+                        <div class="ide-icon">🧠</div>
+                        <div class="ide-name">PyCharm</div>
+                        <div class="ide-desc">Professional Python development environment.</div>
+                    </div>
+
+                    <div class="card ide">
+                        <div class="ide-icon">⌨</div>
+                        <div class="ide-name">Visual Studio Code</div>
+                        <div class="ide-desc">Lightweight and highly extensible code editor.</div>
+                    </div>
+
+                    <div class="card ide">
+                        <div class="ide-icon">📓</div>
+                        <div class="ide-name">Jupyter Notebook</div>
+                        <div class="ide-desc">Interactive environment for code and explanations.</div>
+                    </div>
+
+                    <div class="card ide">
+                        <div class="ide-icon">🐍</div>
+                        <div class="ide-name">IDLE</div>
+                        <div class="ide-desc">Python's Integrated Development and Learning Environment.</div>
+                    </div>
+
+                    <div class="card ide">
+                        <div class="ide-icon">☁</div>
+                        <div class="ide-name">Google Colab</div>
+                        <div class="ide-desc">Cloud-based notebook environment.</div>
+                    </div>
+
+                    <div class="card ide">
+                        <div class="ide-icon">🔬</div>
+                        <div class="ide-name">Spyder</div>
+                        <div class="ide-desc">IDE commonly used for scientific computing.</div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="syntax">
+
+                <div class="section-label">09 · PROGRAMMING RULES</div>
+
+                <h2 class="section-title">Syntax and Semantics</h2>
+
+                <div class="grid grid-2">
+
+                    <div class="card">
+
+                        <h3>Syntax</h3>
+
+                        <p>
+                            <strong>Syntax</strong> refers to the rules governing how a programming
+                            language must be written.
+                        </p>
+
+                        <p>
+                            If the rules are violated, the program can produce a
+                            <strong>syntax error</strong>.
+                        </p>
+
+                        <div class="code">
+                            <span class="comment"># Syntax error example</span><br>
+                            <span class="keyword">if</span> x &gt; 10<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print(x)
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <h3>Semantics</h3>
+
+                        <p>
+                            <strong>Semantics</strong> refers to the meaning or intended behaviour
+                            of a program.
+                        </p>
+
+                        <p>
+                            A program may have valid syntax but still produce the wrong result
+                            because its logic is incorrect.
+                        </p>
+
+                        <div class="code">
+                            <span class="comment"># Syntactically valid</span><br>
+                            area = length + width<br><br>
+
+                            <span class="comment"># Intended calculation</span><br>
+                            area = length * width
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="callout gold">
+                    <strong>Remember:</strong>
+                    Syntax asks <strong>"Is the code written correctly?"</strong>
+                    Semantics asks <strong>"Does the code mean what we intended?"</strong>
+                </div>
+
+            </section>
+            <section class="section" id="identifiers">
+
+                <div class="section-label">10 · PYTHON VOCABULARY</div>
+
+                <h2 class="section-title">Keywords vs Identifiers</h2>
+
+                <div class="card">
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Keywords</th>
+                                    <th>Identifiers</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Definition</td>
+                                    <td>Reserved words with fixed meanings.</td>
+                                    <td>Names created by the programmer.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Creation</td>
+                                    <td>Predefined by Python.</td>
+                                    <td>Created by the developer.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Rules</td>
+                                    <td>Purpose cannot be changed.</td>
+                                    <td>Must follow identifier naming rules.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Examples</td>
+                                    <td><code>if</code>, <code>return</code>, <code>class</code></td>
+                                    <td><code>student_name</code>, <code>total_marks</code></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="identifier-rules">
+                        <div class="rules-heading">
+                            <span class="feature-number">IDENTIFIER RULES</span>
+                            <h3>How to name identifiers</h3>
+                        </div>
+
+                        <div class="rules-grid">
+                            <div class="rule-item">
+                                <span class="rule-number">01</span>
+                                <span>Begin with a letter or underscore (<code>a-z</code>, <code>A-Z</code>,
+                                    <code>_</code>).</span>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-number">02</span>
+                                <span>Use only letters, digits and underscores. Spaces and symbols are not
+                                    allowed.</span>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-number">03</span>
+                                <span>Do not begin an identifier with a digit.</span>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-number">04</span>
+                                <span>Identifiers are case-sensitive: <code>name</code> and <code>Name</code>
+                                    differ.</span>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-number">05</span>
+                                <span>Do not use Python keywords such as <code>if</code>, <code>class</code> or
+                                    <code>return</code>.</span>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-number">06</span>
+                                <span>Choose descriptive names, preferably in <code>snake_case</code>.</span>
+                            </div>
+                        </div>
+
+                        <div class="naming-pattern">
+                            <span>Recommended pattern</span>
+                            <strong>lowercase_words_joined_by_underscores</strong>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top:25px;">Example</h3>
+
+                    <div class="code">
+                        student_name = <span class="string">"Rahul"</span><br><br>
+
+                        <span class="keyword">if</span> student_name:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print(student_name)
+                    </div>
+
+                    <p>
+                        Here, <strong>student_name</strong> is an identifier and
+                        <strong>if</strong> is a Python keyword.
+                    </p>
+
+                    <div class="identifier-examples">
+                        <div class="example-box valid">
+                            <div class="example-label">VALID IDENTIFIERS</div>
+                            <code>student_name</code>
+                            <code>_total</code>
+                            <code>marks2</code>
+                        </div>
+                        <div class="example-box invalid">
+                            <div class="example-label">INVALID IDENTIFIERS</div>
+                            <code>2marks</code>
+                            <code>student-name</code>
+                            <code>class</code>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="comments">
+
+                <div class="section-label">11 · DOCUMENTATION</div>
+
+                <h2 class="section-title">Comments vs Docstrings</h2>
+
+                <div class="card">
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Comments</th>
+                                    <th>Docstrings</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Purpose</td>
+                                    <td>Explain code, logic or implementation details.</td>
+                                    <td>Provide formal documentation.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Syntax</td>
+                                    <td><code># comment</code></td>
+                                    <td>Usually written using triple-quoted strings.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Runtime</td>
+                                    <td>Ignored as comments by Python.</td>
+                                    <td>Can be retained as documentation associated with objects.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Accessibility</td>
+                                    <td>Read directly in source code.</td>
+                                    <td>Can be accessed through mechanisms such as <code>__doc__</code>.</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <h3 style="margin-top:25px;">Example</h3>
+
+                    <div class="code">
+                        <span class="comment"># Calculate total marks</span><br><br>
+
+                        <span class="keyword">def</span> calculate_total(a, b):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"""Return the total of two numbers."""</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> a + b
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="mutable">
+
+                <div class="section-label">12 · OBJECT BEHAVIOUR</div>
+
+                <h2 class="section-title">Mutable vs Immutable</h2>
+
+                <div class="card">
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Mutable</th>
+                                    <th>Immutable</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Modification</td>
+                                    <td>Can be changed after creation.</td>
+                                    <td>Cannot be changed after creation.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Object Behaviour</td>
+                                    <td>The existing object can be modified.</td>
+                                    <td>A modification results in another object/value.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Python Examples</td>
+                                    <td>Lists, dictionaries, sets</td>
+                                    <td>Integers, floats, strings, tuples</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Typical Usage</td>
+                                    <td>Frequently updated data.</td>
+                                    <td>Data that should remain unchanged.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="grid grid-2" style="margin-top:20px;">
+                        <div class="callout green">
+                            <strong>MUTABLE</strong><br><br>
+                            Existing object → <strong>CAN CHANGE</strong>
+                        </div>
+                        <div class="callout">
+                            <strong>IMMUTABLE</strong><br><br>
+                            Existing object → <strong>CANNOT CHANGE</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+
+                <div class="section-label">13 · WARM-UP</div>
+
+                <h2 class="section-title">Algorithm, Flowchart &amp; Pseudocode</h2>
+
+                <div class="card">
+
+                    <p>
+                        Before writing Python code, practise converting a problem into
+                        an algorithm, flowchart and pseudocode.
+                    </p>
+
+                    <div class="grid grid-3">
+
+                        <div class="feature">
+                            <div class="feature-number">TASK 01</div>
+                            <h3>Add Two Numbers</h3>
+                            <p>
+                                Number 1 = 45<br>
+                                Number 2 = 6
+                            </p>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-number">TASK 02</div>
+                            <h3>Multiply Four Numbers</h3>
+                            <p>
+                                5 × 6 × 7 × 8
+                            </p>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-number">TASK 03</div>
+                            <h3>Find Remainder</h3>
+                            <p>
+                                Use the relationship:<br>
+                                Dividend = Divisor × Quotient + Remainder
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="callout">
+                        <strong>Practice Rule:</strong>
+                        For each problem, prepare the
+                        <strong>Algorithm → Flowchart → Pseudocode → Python Program</strong>.
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section" id="instructions">
+
+                <div class="section-label">14 · ACADEMIC GUIDELINES</div>
+
+                <h2 class="section-title">Necessary Instructions</h2>
+
+                <div class="grid grid-2">
+
+                    <div class="card">
+
+                        <h3>Before You Begin</h3>
+
+                        <div class="instruction-list">
+
+                            <div class="instruction">
+                                <div class="instruction-icon">✓</div>
+                                <div>Read all Unit 1 study material carefully.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">✓</div>
+                                <div>Watch or complete the recommended tutorials.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">✓</div>
+                                <div>Practise examples yourself instead of only reading them.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">✓</div>
+                                <div>Understand the concept before memorising definitions.</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Assignment Submission</h3>
+
+                        <div class="instruction-list">
+
+                            <div class="instruction">
+                                <div class="instruction-icon">01</div>
+                                <div>Write answers clearly and systematically.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">02</div>
+                                <div>Use suitable examples and diagrams where required.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">03</div>
+                                <div>Test every Python program before submission.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">04</div>
+                                <div>Submit your work through the designated LMS.</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Academic Integrity</h3>
+
+                        <div class="callout red">
+                            Do not copy answers from classmates, websites, AI-generated
+                            material, or other sources without understanding the concepts.
+                            Your submission should demonstrate <strong>your own learning</strong>.
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Programming Practice</h3>
+
+                        <div class="instruction-list">
+
+                            <div class="instruction">
+                                <div class="instruction-icon">→</div>
+                                <div>Type programs yourself instead of copy-pasting.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">→</div>
+                                <div>Read and understand every line of code.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">→</div>
+                                <div>Observe error messages and learn from them.</div>
+                            </div>
+
+                            <div class="instruction">
+                                <div class="instruction-icon">→</div>
+                                <div>Experiment by changing values and observing results.</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section">
+                <div class="section-label">15 · EXAM PREPARATION</div>
+
+                <h2 class="section-title">Quick Revision</h2>
+
+                <div class="card">
+
+                    <div class="table-wrap">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Concept</th>
+                                    <th>Remember</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Programming Language</td>
+                                    <td>Formal system for communicating instructions to a computer.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Python Creator</td>
+                                    <td>Guido van Rossum</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Python Origin</td>
+                                    <td>December 1989 · CWI · Netherlands</td>
+                                </tr>
+
+                                <tr>
+                                    <td>First Public Release</td>
+                                    <td>Python 0.9.0 · 1991</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Keyword</td>
+                                    <td>Reserved word with a predefined meaning.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Identifier</td>
+                                    <td>Name created by the programmer.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Syntax</td>
+                                    <td>Rules governing how code is written.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Semantics</td>
+                                    <td>Meaning or intended behaviour of code.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Comment</td>
+                                    <td>Human-readable note beginning with #.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Docstring</td>
+                                    <td>Documentation string associated with program objects.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Mutable</td>
+                                    <td>Object can be changed after creation.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Immutable</td>
+                                    <td>Object cannot be changed after creation.</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="section">
+                <div class="section-label">16 · COMPLETION CHECKLIST</div>
+
+                <h2 class="section-title">Unit 1 Checklist</h2>
+
+                <div class="card">
+
+                    <div class="grid grid-2">
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I understand what a programming language is.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I can explain Python's origin and history.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I can explain important features of Python.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I can compare advantages and disadvantages.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I understand interpreter and compiler concepts.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I can explain Python's execution cycle.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I can differentiate syntax and semantics.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I can differentiate keywords and identifiers.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I can differentiate comments and docstrings.</div>
+                        </div>
+
+                        <div class="instruction">
+                            <div class="instruction-icon">□</div>
+                            <div>I understand mutable and immutable objects.</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+
+        <div class="container">
+
+            <div class="python-mark">🐍</div>
+
+            <h3>Unit 1 · Introduction to Python</h3>
+
+            <p>
+                Learn the concept → Understand the logic → Practise the code
+            </p>
+
+            <p>
+                Python Programming · BCA Semester 5
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
