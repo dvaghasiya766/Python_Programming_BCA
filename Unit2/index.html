@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Unit 2 - Python Data Types | BCA629</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="hero">
+
+            <span class="course">
+                BCA629 • Python Programming • Semester 5
+            </span>
+
+            <h1>
+                Unit 2: Python Data Types
+            </h1>
+
+            <p>
+                Operators • Strings • User Input • Type Conversion
+                • Collections • Comprehension • Unpacking
+            </p>
+
+        </header>
+
+
+        <div class="layout">
+
+            <!-- ================= SIDEBAR ================= -->
+
+            <aside class="sidebar">
+                <h3>📚 Unit 2 Contents</h3>
+                <div class="scrollable">
+                    <a href="#operators">
+                        1. Operators
+                    </a>
+                    <a href="#arithmetic">
+                        Arithmetic Operators
+                    </a>
+                    <a href="#comparison">
+                        Comparison Operators
+                    </a>
+                    <a href="#logical">
+                        Logical Operators
+                    </a>
+                    <a href="#assignment">
+                        Assignment Operators
+                    </a>
+                    <a href="#bitwise">
+                        Bitwise Operators
+                    </a>
+                    <a href="#identity">
+                        Identity Operators
+                    </a>
+                    <a href="#membership">
+                        Membership Operators
+                    </a>
+                    <a href="#strings">
+                        2. Strings
+                    </a>
+                    <a href="#string-methods">
+                        String Methods
+                    </a>
+                    <a href="#input">
+                        3. User Input
+                    </a>
+                    <a href="#conversion">
+                        4. Type Conversion
+                    </a>
+                    <a href="#comprehension">
+                        5. Comprehension
+                    </a>
+                    <a href="#list">
+                        6. List
+                    </a>
+                    <a href="#tuple">
+                        7. Tuple
+                    </a>
+                    <a href="#set">
+                        8. Set
+                    </a>
+                    <a href="#dictionary">
+                        9. Dictionary
+                    </a>
+                    <a href="#unpacking">
+                        10. Unpacking
+                    </a>
+                </div>
+            </aside>
+
+
+            <!-- ================= MAIN CONTENT ================= -->
+
+            <main>
+
+
+                <!-- ================= OPERATORS ================= -->
+
+                <section id="operators">
+
+                    <h2>1. Operators</h2>
+
+                    <p class="lead">
+                        Operators are special symbols or keywords used
+                        to perform operations on one or more values.
+                    </p>
+
+                    <p>
+                        The values on which an operator works are called
+                        <strong>operands</strong>.
+                    </p>
+
+                    <pre>2 + 3</pre>
+
+                    <p>
+                        Here, <code>2</code> and <code>3</code> are
+                        operands, while <code>+</code> is the operator.
+                    </p>
+
+                    <div class="operator-grid">
+
+                        <div class="operator-card">
+                            <strong>1. Arithmetic</strong>
+                            Mathematical calculations
+                        </div>
+
+                        <div class="operator-card">
+                            <strong>2. Comparison</strong>
+                            Compare values
+                        </div>
+
+                        <div class="operator-card">
+                            <strong>3. Logical</strong>
+                            Combine conditions
+                        </div>
+
+                        <div class="operator-card">
+                            <strong>4. Bitwise</strong>
+                            Perform operations on bits
+                        </div>
+
+                        <div class="operator-card">
+                            <strong>5. Assignment</strong>
+                            Assign or update values
+                        </div>
+
+                        <div class="operator-card">
+                            <strong>6. Identity</strong>
+                            Compare object identity
+                        </div>
+
+                        <div class="operator-card">
+                            <strong>7. Membership</strong>
+                            Test whether a value exists
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ================= ARITHMETIC ================= -->
+
+                <section id="arithmetic">
+
+                    <h2>Arithmetic Operators</h2>
+
+                    <p>
+                        Arithmetic operators are used to perform
+                        mathematical calculations.
+                    </p>
+
+                    <table>
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            <th>Result</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>+</code></td>
+                            <td>Addition</td>
+                            <td><code>5 + 2</code></td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>-</code></td>
+                            <td>Subtraction</td>
+                            <td><code>5 - 2</code></td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>*</code></td>
+                            <td>Multiplication</td>
+                            <td><code>5 * 2</code></td>
+                            <td>10</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>/</code></td>
+                            <td>Division</td>
+                            <td><code>5 / 2</code></td>
+                            <td>2.5</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>%</code></td>
+                            <td>Modulo / Remainder</td>
+                            <td><code>5 % 2</code></td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>**</code></td>
+                            <td>Exponentiation</td>
+                            <td><code>5 ** 2</code></td>
+                            <td>25</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>//</code></td>
+                            <td>Floor Division</td>
+                            <td><code>5 // 2</code></td>
+                            <td>2</td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= COMPARISON ================= -->
+
+                <section id="comparison">
+
+                    <h2>Comparison Operators</h2>
+
+                    <p>
+                        Comparison operators compare two values and
+                        return a Boolean result:
+                        <code>True</code> or <code>False</code>.
+                    </p>
+
+                    <table>
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            <th>Result</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>==</code></td>
+                            <td>Equal to</td>
+                            <td><code>5 == 2</code></td>
+                            <td>False</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>!=</code></td>
+                            <td>Not equal to</td>
+                            <td><code>5 != 2</code></td>
+                            <td>True</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>&gt;</code></td>
+                            <td>Greater than</td>
+                            <td><code>5 &gt; 2</code></td>
+                            <td>True</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>&lt;</code></td>
+                            <td>Less than</td>
+                            <td><code>5 &lt; 2</code></td>
+                            <td>False</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>&gt;=</code></td>
+                            <td>Greater than or equal to</td>
+                            <td><code>5 &gt;= 2</code></td>
+                            <td>True</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>&lt;=</code></td>
+                            <td>Less than or equal to</td>
+                            <td><code>5 &lt;= 2</code></td>
+                            <td>False</td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= LOGICAL ================= -->
+
+                <section id="logical">
+
+                    <h2>Logical Operators</h2>
+
+                    <p>
+                        Logical operators are used to combine or
+                        reverse Boolean expressions.
+                    </p>
+
+                    <table>
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            <th>Result</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>and</code></td>
+                            <td>
+                                True when both expressions are True
+                            </td>
+                            <td>
+                                <code>5 == 2 and 5 &gt; 2</code>
+                            </td>
+                            <td>False</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>or</code></td>
+                            <td>
+                                True when at least one expression is True
+                            </td>
+                            <td>
+                                <code>5 == 2 or 5 &gt; 2</code>
+                            </td>
+                            <td>True</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>not</code></td>
+                            <td>
+                                Reverses the Boolean result
+                            </td>
+                            <td>
+                                <code>not(5 == 2)</code>
+                            </td>
+                            <td>True</td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= ASSIGNMENT ================= -->
+
+                <section id="assignment">
+
+                    <h2>Assignment Operators</h2>
+
+                    <p>
+                        Assignment operators are used to assign values
+                        to variables and update their values.
+                    </p>
+
+                    <table>
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Example</th>
+                            <th>Equivalent</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>=</code></td>
+                            <td><code>x = 10</code></td>
+                            <td>Assign 10 to x</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>+=</code></td>
+                            <td><code>x += 5</code></td>
+                            <td><code>x = x + 5</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>-=</code></td>
+                            <td><code>x -= 5</code></td>
+                            <td><code>x = x - 5</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>*=</code></td>
+                            <td><code>x *= 5</code></td>
+                            <td><code>x = x * 5</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>/=</code></td>
+                            <td><code>x /= 5</code></td>
+                            <td><code>x = x / 5</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>//=</code></td>
+                            <td><code>x //= 5</code></td>
+                            <td><code>x = x // 5</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>%=</code></td>
+                            <td><code>x %= 5</code></td>
+                            <td><code>x = x % 5</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>**=</code></td>
+                            <td><code>x **= 2</code></td>
+                            <td><code>x = x ** 2</code></td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= BITWISE ================= -->
+
+                <section id="bitwise">
+
+                    <h2>Bitwise Operators</h2>
+
+                    <p>
+                        Bitwise operators perform operations on the
+                        binary representation of integer values.
+                    </p>
+
+                    <table>
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            <th>Result</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>&amp;</code></td>
+                            <td>AND</td>
+                            <td>
+                                Sets a bit to 1 when both bits are 1.
+                            </td>
+                            <td><code>5 &amp; 2</code></td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>|</code></td>
+                            <td>OR</td>
+                            <td>
+                                Sets a bit to 1 when at least one bit is 1.
+                            </td>
+                            <td><code>5 | 2</code></td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>^</code></td>
+                            <td>XOR</td>
+                            <td>
+                                Sets a bit to 1 when the bits are different.
+                            </td>
+                            <td><code>5 ^ 2</code></td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>~</code></td>
+                            <td>NOT</td>
+                            <td>
+                                Inverts the bits of an integer.
+                            </td>
+                            <td><code>~10</code></td>
+                            <td>-11</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>&lt;&lt;</code></td>
+                            <td>Left Shift</td>
+                            <td>
+                                Shifts bits toward the left.
+                            </td>
+                            <td><code>5 &lt;&lt; 2</code></td>
+                            <td>20</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>&gt;&gt;</code></td>
+                            <td>Right Shift</td>
+                            <td>
+                                Shifts bits toward the right.
+                            </td>
+                            <td><code>5 &gt;&gt; 2</code></td>
+                            <td>1</td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= IDENTITY ================= -->
+
+                <section id="identity">
+
+                    <h2>Identity Operators</h2>
+
+                    <p>
+                        Identity operators check whether two variables
+                        refer to the <strong>same object</strong>.
+                    </p>
+
+                    <table>
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>is</code></td>
+                            <td>
+                                True when both references refer to
+                                the same object.
+                            </td>
+                            <td>
+                                <pre>a = []
+b = a
+
+print(a is b)</pre>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><code>is not</code></td>
+                            <td>
+                                True when the references refer to
+                                different objects.
+                            </td>
+                            <td>
+                                <pre>a = []
+b = []
+
+print(a is not b)</pre>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="warning">
+                        <strong>Important:</strong>
+                        <code>==</code> compares values, while
+                        <code>is</code> compares object identity.
+                    </div>
+
+                </section>
+
+
+                <!-- ================= MEMBERSHIP ================= -->
+
+                <section id="membership">
+
+                    <h2>Membership Operators</h2>
+
+                    <p>
+                        Membership operators test whether a value
+                        exists inside a sequence or collection.
+                    </p>
+
+                    <table>
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            <th>Result</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>in</code></td>
+                            <td>
+                                Returns True if the value is present.
+                            </td>
+                            <td>
+                                <code>"am" in "I am Student"</code>
+                            </td>
+                            <td>True</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>not in</code></td>
+                            <td>
+                                Returns True if the value is absent.
+                            </td>
+                            <td>
+                                <code>"am" not in "I am Student"</code>
+                            </td>
+                            <td>False</td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= STRING ================= -->
+
+                <section id="strings">
+
+                    <h2>2. String</h2>
+
+                    <p class="lead">
+                        A string is an immutable sequence of Unicode
+                        characters used to store and manipulate text.
+                    </p>
+
+                    <p>
+                        Strings can be created using single quotes,
+                        double quotes, or triple quotes.
+                    </p>
+
+                    <pre>name = "Python"
+
+message = 'Hello Python'
+
+description = """Python is a
+programming language."""</pre>
+
+                    <h3>Characteristics of Strings</h3>
+
+                    <ul>
+                        <li>
+                            <strong>Immutable:</strong>
+                            A string cannot be changed after creation.
+                        </li>
+
+                        <li>
+                            <strong>Sequence:</strong>
+                            Characters are ordered and can be accessed
+                            using indexing and slicing.
+                        </li>
+
+                        <li>
+                            <strong>Unicode:</strong>
+                            Python 3 strings support Unicode characters.
+                        </li>
+
+                        <li>
+                            <strong>No Character Data Type:</strong>
+                            A single character is simply a string
+                            containing one character.
+                        </li>
+                    </ul>
+
+
+                    <h3>String Concatenation</h3>
+
+                    <p>
+                        Concatenation joins two or more strings.
+                    </p>
+
+                    <pre>print("Hello" + " World!")</pre>
+
+                    <pre class="output">Hello World!</pre>
+
+
+                    <h3>String Repetition</h3>
+
+                    <pre>print("Ha" * 3)</pre>
+
+                    <pre class="output">HaHaHa</pre>
+
+
+                    <h3>String Indexing</h3>
+
+                    <p>
+                        Indexing accesses a character using its
+                        zero-based index.
+                    </p>
+
+                    <pre>s = "Python"
+
+print(s[0])
+print(s[2])</pre>
+
+                    <pre class="output">P
+t</pre>
+
+
+                    <h3>String Slicing</h3>
+
+                    <p>
+                        Slicing extracts a portion of a string.
+                        The start index is inclusive and the end
+                        index is exclusive.
+                    </p>
+
+                    <pre>s = "Python"
+
+print(s[1:4])</pre>
+
+                    <pre class="output">yth</pre>
+
+
+                    <h3>String Membership</h3>
+
+                    <pre>print("Py" in "Python")</pre>
+
+                    <pre class="output">True</pre>
+
+                </section>
+
+
+                <!-- ================= STRING METHODS ================= -->
+
+                <section id="string-methods">
+
+                    <h2>String Methods</h2>
+
+                    <p>
+                        The following are 20 important string methods
+                        commonly used in Python programming.
+                    </p>
+
+                    <table>
+
+                        <tr>
+                            <th>#</th>
+                            <th>Method</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><code>upper()</code></td>
+                            <td>Converts text to uppercase.</td>
+                            <td><code>"hello".upper()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td><code>lower()</code></td>
+                            <td>Converts text to lowercase.</td>
+                            <td><code>"HELLO".lower()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td><code>title()</code></td>
+                            <td>Capitalizes each word.</td>
+                            <td><code>"hello world".title()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td><code>capitalize()</code></td>
+                            <td>Capitalizes the first character.</td>
+                            <td><code>"hello".capitalize()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td><code>swapcase()</code></td>
+                            <td>Swaps uppercase and lowercase.</td>
+                            <td><code>"Hello".swapcase()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td><code>find()</code></td>
+                            <td>Returns the first matching index or -1.</td>
+                            <td><code>"abc".find("b")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td><code>rfind()</code></td>
+                            <td>Returns the last matching index.</td>
+                            <td><code>"abcb".rfind("b")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td><code>startswith()</code></td>
+                            <td>Checks the beginning of a string.</td>
+                            <td><code>"hello".startswith("he")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td><code>endswith()</code></td>
+                            <td>Checks the ending of a string.</td>
+                            <td><code>"hello".endswith("o")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td><code>replace()</code></td>
+                            <td>Replaces a substring.</td>
+                            <td><code>"a-b".replace("-", ":")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>11</td>
+                            <td><code>strip()</code></td>
+                            <td>Removes leading and trailing whitespace.</td>
+                            <td><code>" hi ".strip()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td><code>split()</code></td>
+                            <td>Splits a string into a list.</td>
+                            <td><code>"a,b".split(",")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>13</td>
+                            <td><code>join()</code></td>
+                            <td>Joins strings using a separator.</td>
+                            <td><code>" ".join(["Hi","All"])</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>14</td>
+                            <td><code>count()</code></td>
+                            <td>Counts occurrences of a substring.</td>
+                            <td><code>"banana".count("a")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>15</td>
+                            <td><code>isdigit()</code></td>
+                            <td>Checks whether all characters are digits.</td>
+                            <td><code>"123".isdigit()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>16</td>
+                            <td><code>isalpha()</code></td>
+                            <td>Checks whether all characters are letters.</td>
+                            <td><code>"abc".isalpha()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>17</td>
+                            <td><code>isalnum()</code></td>
+                            <td>Checks for letters and numbers.</td>
+                            <td><code>"a1".isalnum()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>18</td>
+                            <td><code>isspace()</code></td>
+                            <td>Checks for whitespace characters.</td>
+                            <td><code>" ".isspace()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>19</td>
+                            <td><code>center()</code></td>
+                            <td>Centers a string within a specified width.</td>
+                            <td><code>"Hi".center(6,"*")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>20</td>
+                            <td><code>zfill()</code></td>
+                            <td>Pads the left side with zeros.</td>
+                            <td><code>"5".zfill(3)</code></td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= USER INPUT ================= -->
+
+                <section id="input">
+
+                    <h2>3. User Input</h2>
+
+                    <p>
+                        User input is data provided by a user while
+                        a program is running.
+                    </p>
+
+                    <p>
+                        Python provides the built-in
+                        <code>input()</code> function for receiving
+                        input from the user through the console.
+                    </p>
+
+                    <h3>Basic Syntax</h3>
+
+                    <pre>variable_name = input("Prompt message: ")</pre>
+
+                    <h3>Example</h3>
+
+                    <pre>name = input("Enter your name: ")
+
+print("Hello", name)</pre>
+
+                    <div class="note">
+
+                        <strong>Important:</strong>
+                        Program execution pauses when
+                        <code>input()</code> is called until the
+                        user enters data and presses Enter.
+
+                    </div>
+
+                </section>
+
+
+                <!-- ================= TYPE CONVERSION ================= -->
+
+                <section id="conversion">
+
+                    <h2>4. Type Conversion</h2>
+
+                    <p>
+                        Type conversion means converting a value
+                        from one data type into another.
+                    </p>
+
+                    <div class="warning">
+
+                        <strong>Important:</strong>
+                        <code>input()</code> always returns a
+                        string.
+
+                    </div>
+
+                    <pre>age = input("Enter your age: ")
+
+print(type(age))</pre>
+
+                    <p>
+                        If the user enters <code>20</code>,
+                        the value received by the program is
+                        <code>"20"</code>, which is a string.
+                    </p>
+
+                    <h3>Common Conversion Functions</h3>
+
+                    <table>
+
+                        <tr>
+                            <th>Function</th>
+                            <th>Purpose</th>
+                            <th>Example</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>int()</code></td>
+                            <td>Converts to integer.</td>
+                            <td><code>int("123")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>float()</code></td>
+                            <td>Converts to floating-point number.</td>
+                            <td><code>float("12.5")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>str()</code></td>
+                            <td>Converts to string.</td>
+                            <td><code>str(123)</code></td>
+                        </tr>
+
+                        <tr>
+                            <td><code>bool()</code></td>
+                            <td>Converts to Boolean.</td>
+                            <td><code>bool(1)</code></td>
+                        </tr>
+
+                    </table>
+
+                    <h3>Example</h3>
+
+                    <pre>number = input("Enter a number: ")
+
+number = int(number)
+
+print(number + 10)</pre>
+
+                </section>
+
+
+                <!-- ================= COMPREHENSION ================= -->
+
+                <section id="comprehension">
+
+                    <h2>5. Comprehension</h2>
+
+                    <p>
+                        Comprehension provides a concise way to create
+                        new collections from existing iterables.
+                    </p>
+
+                    <p>
+                        Common forms include:
+                    </p>
+
+                    <ul>
+                        <li>List Comprehension</li>
+                        <li>Set Comprehension</li>
+                        <li>Dictionary Comprehension</li>
+                    </ul>
+
+                    <h3>List Comprehension</h3>
+
+                    <pre>squares = [x * x for x in range(1, 6)]
+
+print(squares)</pre>
+
+                    <pre class="output">[1, 4, 9, 16, 25]</pre>
+
+                    <p>
+                        Comprehensions can make collection-building
+                        code shorter and more readable.
+                    </p>
+
+                </section>
+
+
+                <!-- ================= LIST ================= -->
+
+                <section id="list">
+
+                    <h2>6. List</h2>
+
+                    <p class="lead">
+                        A list is an ordered and mutable collection
+                        of elements.
+                    </p>
+
+                    <h3>Characteristics</h3>
+
+                    <ul>
+
+                        <li>
+                            <strong>Ordered:</strong>
+                            Elements maintain their sequence.
+                        </li>
+
+                        <li>
+                            <strong>Mutable:</strong>
+                            Elements can be changed.
+                        </li>
+
+                        <li>
+                            <strong>Duplicates:</strong>
+                            Duplicate values are allowed.
+                        </li>
+
+                        <li>
+                            <strong>Indexed:</strong>
+                            Elements use zero-based indexing.
+                        </li>
+
+                        <li>
+                            <strong>Heterogeneous:</strong>
+                            Different data types can be stored.
+                        </li>
+
+                    </ul>
+
+                    <h3>Creating a List</h3>
+
+                    <pre>numbers = [1, 2, 3, 4, 5]
+
+fruits = ["apple", "banana", "cherry"]
+
+mixed = [10, "Python", 3.14, True]</pre>
+
+                    <h3>Accessing List Elements</h3>
+
+                    <pre>fruits = ["apple", "banana", "cherry"]
+
+print(fruits[0])
+print(fruits[-1])
+print(fruits[1:3])</pre>
+
+                    <pre class="output">apple
+cherry
+['banana', 'cherry']</pre>
+
+                    <h3>Modifying a List</h3>
+
+                    <pre>fruits = ["apple", "banana", "cherry"]
+
+fruits[1] = "blueberry"
+
+fruits.append("orange")
+
+fruits.insert(1, "mango")
+
+fruits.remove("blueberry")
+
+print(fruits)</pre>
+
+                    <h3>Important List Methods</h3>
+
+                    <table>
+
+                        <tr>
+                            <th>Category</th>
+                            <th>Methods</th>
+                        </tr>
+
+                        <tr>
+                            <td>Adding</td>
+                            <td>
+                                <code>append()</code>,
+                                <code>extend()</code>,
+                                <code>insert()</code>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Removing</td>
+                            <td>
+                                <code>remove()</code>,
+                                <code>pop()</code>,
+                                <code>clear()</code>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Searching</td>
+                            <td>
+                                <code>index()</code>,
+                                <code>count()</code>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Reordering</td>
+                            <td>
+                                <code>sort()</code>,
+                                <code>reverse()</code>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Copying</td>
+                            <td>
+                                <code>copy()</code>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="note">
+
+                        <strong>Remember:</strong>
+                        <code>len()</code>, <code>max()</code>,
+                        <code>min()</code>, <code>sum()</code>,
+                        <code>sorted()</code>, and <code>list()</code>
+                        are built-in functions, not list methods.
+
+                    </div>
+
+                </section>
+
+
+                <!-- ================= TUPLE ================= -->
+
+                <section id="tuple">
+
+                    <h2>7. Tuple</h2>
+
+                    <p class="lead">
+                        A tuple is an ordered and immutable collection
+                        of elements.
+                    </p>
+
+                    <h3>Characteristics</h3>
+
+                    <ul>
+
+                        <li>Ordered</li>
+                        <li>Immutable</li>
+                        <li>Allows duplicate values</li>
+                        <li>Supports indexing and slicing</li>
+                        <li>Can contain different data types</li>
+
+                    </ul>
+
+                    <h3>Creating Tuples</h3>
+
+                    <pre>empty_tuple = ()
+
+person = (
+    "John Doe",
+    35,
+    "Python Developer"
+)
+
+coordinates = 10.0, 20.0
+
+single_item = ("apple",)</pre>
+
+                    <div class="note">
+
+                        A single-element tuple requires a comma:
+                        <code>("apple",)</code>
+
+                    </div>
+
+                    <h3>Tuple Conversion</h3>
+
+                    <pre>my_list = [1, 2, 3]
+
+my_tuple = tuple(my_list)
+
+print(my_tuple)</pre>
+
+                    <pre class="output">(1, 2, 3)</pre>
+
+                    <h3>Accessing Tuple Elements</h3>
+
+                    <pre>fruits = (
+    "apple",
+    "banana",
+    "cherry"
+)
+
+print(fruits[0])
+print(fruits[-1])
+print(fruits[1:3])</pre>
+
+                    <pre class="output">apple
+cherry
+('banana', 'cherry')</pre>
+
+                    <h3>Tuple Methods</h3>
+
+                    <table>
+
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>count()</code></td>
+                            <td>
+                                Counts occurrences of a value.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><code>index()</code></td>
+                            <td>
+                                Returns the index of a value.
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= SET ================= -->
+
+                <section id="set">
+
+                    <h2>8. Set</h2>
+
+                    <p class="lead">
+                        A set is an unordered collection of unique
+                        hashable elements.
+                    </p>
+
+                    <ul>
+
+                        <li>Duplicate values are automatically removed.</li>
+
+                        <li>Sets do not support indexing or slicing.</li>
+
+                        <li>
+                            Sets are mutable, but their individual
+                            elements must be hashable.
+                        </li>
+
+                        <li>
+                            Sets are useful for membership testing
+                            and mathematical set operations.
+                        </li>
+
+                    </ul>
+
+                    <h3>Creating a Set</h3>
+
+                    <pre>fruits = {
+    "apple",
+    "banana",
+    "cherry"
+}
+
+numbers = {1, 2, 2, 3, 4}
+
+print(numbers)</pre>
+
+                    <pre class="output">{1, 2, 3, 4}</pre>
+
+                    <div class="note">
+
+                        <strong>Empty Set:</strong>
+
+                        <code>{}</code> creates an empty dictionary.
+                        Use <code>set()</code> to create an empty set.
+
+                    </div>
+
+                    <pre>empty_set = set()</pre>
+
+                    <h3>Set Methods</h3>
+
+                    <table>
+
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                        </tr>
+
+                        <tr>
+                            <td><code>add()</code></td>
+                            <td>Adds one element.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>update()</code></td>
+                            <td>Adds multiple elements.</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>remove()</code></td>
+                            <td>
+                                Removes an element and raises
+                                KeyError if absent.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><code>discard()</code></td>
+                            <td>
+                                Removes an element if present.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><code>pop()</code></td>
+                            <td>
+                                Removes and returns an arbitrary element.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><code>clear()</code></td>
+                            <td>Removes all elements.</td>
+                        </tr>
+
+                    </table>
+
+                    <h3>Set Operations</h3>
+
+                    <table>
+
+                        <tr>
+                            <th>Operation</th>
+                            <th>Method</th>
+                            <th>Operator</th>
+                            <th>Description</th>
+                        </tr>
+
+                        <tr>
+                            <td>Union</td>
+                            <td><code>union()</code></td>
+                            <td><code>|</code></td>
+                            <td>
+                                Elements present in either set.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Intersection</td>
+                            <td><code>intersection()</code></td>
+                            <td><code>&amp;</code></td>
+                            <td>
+                                Elements common to both sets.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Difference</td>
+                            <td><code>difference()</code></td>
+                            <td><code>-</code></td>
+                            <td>
+                                Elements in the first set but not
+                                the second.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Symmetric Difference</td>
+                            <td>
+                                <code>symmetric_difference()</code>
+                            </td>
+                            <td><code>^</code></td>
+                            <td>
+                                Elements present in either set,
+                                but not both.
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+                <!-- ================= DICTIONARY ================= -->
+
+                <section id="dictionary">
+
+                    <h2>9. Dictionary</h2>
+
+                    <p class="lead">
+                        A dictionary stores data using
+                        <strong>key:value</strong> pairs.
+                    </p>
+
+                    <p>
+                        Dictionaries are ordered by insertion order,
+                        mutable, and do not allow duplicate keys.
+                    </p>
+
+                    <h3>Creating a Dictionary</h3>
+
+                    <pre>student = {
+    "name": "Dev",
+    "age": 20,
+    "course": "BCA"
+}
+
+print(student)</pre>
+
+                    <h3>Accessing Values</h3>
+
+                    <pre>print(student["name"])</pre>
+
+                    <pre class="output">Dev</pre>
+
+                    <h3>Changing Dictionary Values</h3>
+
+                    <pre>student["age"] = 21
+
+student["city"] = "Rajkot"
+
+print(student)</pre>
+
+                    <h3>Duplicate Keys</h3>
+
+                    <pre>data = {
+    "year": 1964,
+    "year": 2020
+}
+
+print(data)</pre>
+
+                    <pre class="output">{'year': 2020}</pre>
+
+                    <div class="warning">
+
+                        <strong>Important:</strong>
+                        Dictionary keys must be unique.
+                        If a key appears more than once,
+                        the later value replaces the earlier value.
+
+                    </div>
+
+                </section>
+
+
+                <!-- ================= UNPACKING ================= -->
+
+                <section id="unpacking">
+
+                    <h2>10. Unpacking with * and **</h2>
+
+                    <p>
+                        Python provides <code>*</code> and
+                        <code>**</code> for unpacking values from
+                        iterables and dictionaries in appropriate
+                        contexts.
+                    </p>
+
+                    <h3>Unpacking with <code>*</code></h3>
+
+                    <p>
+                        The <code>*</code> operator can unpack elements
+                        from an iterable such as a list, tuple, set,
+                        or string.
+                    </p>
+
+                    <pre>x = (1, 2, 3, 4)
+
+print(x)
+
+print(*x)</pre>
+
+                    <pre class="output">(1, 2, 3, 4)
+1 2 3 4</pre>
+
+                    <h3>Dictionary Unpacking with <code>**</code></h3>
+
+                    <p>
+                        The <code>**</code> operator can unpack
+                        key-value pairs from a dictionary.
+                    </p>
+
+                    <pre>dict1 = {
+    "name": "Dev",
+    "email": "student@example.com"
+}
+
+dict2 = {
+    "name": "Vijay",
+    "age": 20
+}
+
+new_dict = {
+    **dict1,
+    **dict2
+}
+
+print(new_dict)</pre>
+
+                    <pre class="output">
+{'name': 'Vijay',
+ 'email': 'student@example.com',
+ 'age': 20}
+</pre>
+
+                    <div class="note">
+
+                        If duplicate keys occur during dictionary
+                        unpacking, the value from the later dictionary
+                        replaces the earlier value.
+
+                    </div>
+
+                </section>
+
+
+                <!-- ================= SUMMARY ================= -->
+
+                <section>
+
+                    <h2>📌 Unit 2 Summary</h2>
+
+                    <table>
+
+                        <tr>
+                            <th>Topic</th>
+                            <th>Key Learning</th>
+                        </tr>
+
+                        <tr>
+                            <td>Operators</td>
+                            <td>
+                                Perform operations on values and variables.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Strings</td>
+                            <td>
+                                Immutable sequences used to store text.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>User Input</td>
+                            <td>
+                                Receive data using <code>input()</code>.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Type Conversion</td>
+                            <td>
+                                Convert values between compatible data types.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Comprehension</td>
+                            <td>
+                                Create collections concisely.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>List</td>
+                            <td>
+                                Ordered and mutable collection.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuple</td>
+                            <td>
+                                Ordered and immutable collection.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Set</td>
+                            <td>
+                                Unordered collection of unique elements.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Dictionary</td>
+                            <td>
+                                Mutable collection of key:value pairs.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Unpacking</td>
+                            <td>
+                                Use <code>*</code> and <code>**</code>
+                                to unpack values.
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </section>
+
+
+            </main>
+
+        </div>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <strong>BCA629 — Python Programming</strong>
+            <br>
+            Unit 2: Python Data Types
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
