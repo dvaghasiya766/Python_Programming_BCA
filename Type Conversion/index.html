@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Type Conversion Activity</title>
+    <link rel="stylesheet" href="./Type Conversion.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🐍 Python Type Conversion</h1>
+        <p>Interactive Learning Activity</p>
+    </header>
+
+    <main>
+
+        <!-- Introduction -->
+        <section class="card">
+            <h2>📚 What is Type Conversion?</h2>
+            <p>
+                Type conversion is the process of converting a value from one
+                data type to another data type.
+            </p>
+
+            <div class="code-box">
+                <code>
+                    a = "100"<br>
+                    b = int(a)<br>
+                    print(b)
+                </code>
+            </div>
+
+            <p>
+                Here, the string <strong>"100"</strong> is converted into an
+                integer using <strong>int()</strong>.
+            </p>
+        </section>
+
+        <!-- Conversion Functions -->
+        <section class="card">
+            <h2>🔄 Common Type Conversion Functions</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Function</th>
+                        <th>Purpose</th>
+                        <th>Example</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>int()</td>
+                        <td>Convert to integer</td>
+                        <td>int("25")</td>
+                        <td>25</td>
+                    </tr>
+
+                    <tr>
+                        <td>float()</td>
+                        <td>Convert to float</td>
+                        <td>float("25.5")</td>
+                        <td>25.5</td>
+                    </tr>
+
+                    <tr>
+                        <td>str()</td>
+                        <td>Convert to string</td>
+                        <td>str(25)</td>
+                        <td>"25"</td>
+                    </tr>
+
+                    <tr>
+                        <td>bool()</td>
+                        <td>Convert to Boolean</td>
+                        <td>bool(1)</td>
+                        <td>True</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Interactive Activity -->
+        <section class="card">
+            <h2>🎯 Interactive Type Conversion Activity</h2>
+
+            <p>
+                Enter a value, select the original data type and choose the
+                data type you want to convert it into.
+            </p>
+
+            <div class="form-group">
+                <label for="inputValue">Enter Value:</label>
+                <input type="text" id="inputValue" placeholder="Example: 123">
+            </div>
+
+            <div class="form-group">
+                <label for="fromType">Original Type:</label>
+
+                <select id="fromType">
+                    <option value="str">String</option>
+                    <option value="int">Integer</option>
+                    <option value="float">Float</option>
+                    <option value="bool">Boolean</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="toType">Convert To:</label>
+
+                <select id="toType">
+                    <option value="int">Integer</option>
+                    <option value="float">Float</option>
+                    <option value="str">String</option>
+                    <option value="bool">Boolean</option>
+                </select>
+            </div>
+
+            <button onclick="convertValue()">Convert</button>
+
+            <div id="result" class="result">
+                Result will appear here.
+            </div>
+        </section>
+
+        <!-- Code Generator -->
+        <section class="card">
+            <h2>💻 Python Code Generator</h2>
+
+            <p>
+                Select the conversion and observe the equivalent Python code.
+            </p>
+
+            <div id="pythonCode" class="code-box">
+                Select a conversion above.
+            </div>
+        </section>
+
+        <!-- Important Concept -->
+        <section class="card">
+            <h2>⚠️ Important Concepts</h2>
+
+            <ul>
+                <li>
+                    <strong>input()</strong> always returns a string.
+                </li>
+
+                <li>
+                    Use <strong>int()</strong> when an integer is required.
+                </li>
+
+                <li>
+                    Use <strong>float()</strong> when a decimal number is required.
+                </li>
+
+                <li>
+                    Use <strong>str()</strong> to convert a value into text.
+                </li>
+
+                <li>
+                    Use <strong>bool()</strong> to convert a value into
+                    <strong>True</strong> or <strong>False</strong>.
+                </li>
+
+                <li>
+                    Not every value can be converted into every data type.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Exercises -->
+        <section class="card">
+            <h2>📝 Practice Exercises</h2>
+
+            <p>
+                Complete the following exercises in Python.
+            </p>
+
+            <ol>
+                <li>Convert the string <code>"100"</code> into an integer.</li>
+
+                <li>Convert the string <code>"25.5"</code> into a float.</li>
+
+                <li>Convert the integer <code>500</code> into a string.</li>
+
+                <li>Convert the float <code>45.75</code> into an integer.</li>
+
+                <li>Convert the integer <code>1</code> into a Boolean value.</li>
+
+                <li>Convert the integer <code>0</code> into a Boolean value.</li>
+
+                <li>Convert the string <code>"Python"</code> into a Boolean value.</li>
+
+                <li>Convert the empty string <code>""</code> into a Boolean value.</li>
+
+                <li>Convert the string <code>"123"</code> into an integer and print its type.</li>
+
+                <li>Convert the string <code>"123.45"</code> into a float and print its type.</li>
+
+                <li>Convert the integer <code>250</code> into a float.</li>
+
+                <li>Convert the float <code>99.99</code> into an integer.</li>
+
+                <li>Convert the Boolean value <code>True</code> into an integer.</li>
+
+                <li>Convert the Boolean value <code>False</code> into an integer.</li>
+
+                <li>Convert the Boolean value <code>True</code> into a float.</li>
+
+                <li>Convert the Boolean value <code>False</code> into a float.</li>
+
+                <li>Convert the integer <code>1000</code> into a string and concatenate it with <code>" Rupees"</code>.
+                </li>
+
+                <li>Take a number using <code>input()</code> and convert it into an integer.</li>
+
+                <li>Take a decimal number using <code>input()</code> and convert it into a float.</li>
+
+                <li>Take two numbers using <code>input()</code> and calculate their sum after conversion.</li>
+
+                <li>Take the user's age using <code>input()</code> and convert it into an integer.</li>
+
+                <li>Take the user's height using <code>input()</code> and convert it into a float.</li>
+
+                <li>Convert <code>"50"</code> into an integer and multiply it by <code>2</code>.</li>
+
+                <li>Convert <code>"12.5"</code> into a float and add <code>7.5</code>.</li>
+
+                <li>Convert the integer <code>75</code> into a string and print its type.</li>
+
+                <li>Predict the output of <code>bool(0)</code>.</li>
+
+                <li>Predict the output of <code>bool(10)</code>.</li>
+
+                <li>Predict the output of <code>bool("")</code>.</li>
+
+                <li>Predict the output of <code>int(15.99)</code>.</li>
+
+                <li>
+                    Write a program that accepts a student's marks using
+                    <code>input()</code>, converts the input into a float,
+                    and displays the marks and their data type.
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🐍 Python Programming | BCA629 | Unit 2 – Python Data Types</p>
+    </footer>
+</body>
+
+</html>

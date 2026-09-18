@@ -1,0 +1,442 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python String Indexing & Slicing</title>
+    <link rel="stylesheet" href="./indexing_slicing.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="badge">
+                UNIT 2 • PYTHON DATA TYPES
+            </div>
+
+            <h1>🐍 String Indexing & Slicing</h1>
+
+            <p>
+                Explore how Python accesses and extracts characters
+                from a string using indexing and slicing.
+            </p>
+
+        </header>
+
+
+        <!-- String Input -->
+        <section class="card">
+
+            <h2>🔤 Step 1 — Enter Your String</h2>
+
+            <p class="description">
+                Enter any string and explore its indexes and slices.
+            </p>
+
+            <div class="input-group">
+
+                <input type="text" id="textInput" value="PYTHON" placeholder="Enter a string...">
+
+                <button id="showStringBtn">
+                    Display
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Indexing Visualization -->
+        <section class="card">
+
+            <h2>📍 Step 2 — Explore Indexing</h2>
+
+            <p class="description">
+                Python uses <strong>zero-based indexing</strong>.
+                Each character has both a positive and negative index.
+            </p>
+
+            <div class="index-wrapper">
+
+                <div class="index-title positive-title">
+                    Positive Index
+                </div>
+
+                <div class="index-row" id="positiveIndexes">
+                </div>
+
+
+                <div class="character-row" id="characters">
+                </div>
+
+
+                <div class="index-title negative-title">
+                    Negative Index
+                </div>
+
+                <div class="index-row" id="negativeIndexes">
+                </div>
+
+            </div>
+
+            <div class="index-note">
+
+                <span>🔵 Positive Index: 0, 1, 2, 3...</span>
+
+                <span>🟠 Negative Index: -1, -2, -3...</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Indexing Practice -->
+        <section class="card">
+
+            <h2>🎯 Step 3 — Try Indexing</h2>
+
+            <p class="description">
+                Enter an index to find the character at that position.
+            </p>
+
+            <div class="input-group">
+
+                <input type="number" id="indexInput" placeholder="Example: 2 or -1">
+
+                <button id="checkIndexBtn">
+                    Find Character
+                </button>
+
+            </div>
+
+            <div id="indexResult" class="result hidden">
+            </div>
+
+        </section>
+
+
+        <!-- Slicing -->
+        <section class="card slicing-card">
+
+            <h2>✂️ Step 4 — Explore String Slicing</h2>
+
+            <p class="description">
+                Python slicing follows the syntax:
+            </p>
+
+            <div class="syntax">
+                string[start : stop : step]
+            </div>
+
+            <div class="slice-grid">
+
+                <div class="slice-input">
+
+                    <label for="startInput">
+                        Start
+                    </label>
+
+                    <input type="number" id="startInput" placeholder="Optional">
+
+                </div>
+
+
+                <div class="slice-input">
+
+                    <label for="stopInput">
+                        Stop
+                    </label>
+
+                    <input type="number" id="stopInput" placeholder="Optional">
+
+                </div>
+
+
+                <div class="slice-input">
+
+                    <label for="stepInput">
+                        Step
+                    </label>
+
+                    <input type="number" id="stepInput" placeholder="1" value="1">
+
+                </div>
+
+            </div>
+
+
+            <button id="sliceBtn" class="slice-button">
+
+                ✂️ Generate Slice
+
+            </button>
+
+
+            <div id="sliceResult" class="slice-result hidden">
+            </div>
+
+
+            <!-- Slice Visualization -->
+            <div id="sliceVisualization" class="slice-visualization">
+            </div>
+
+        </section>
+
+
+        <!-- Slicing Examples -->
+        <section class="card">
+
+            <h2>💡 Try These Examples</h2>
+
+            <div class="examples">
+
+                <button class="example-btn" data-start="0" data-stop="3" data-step="1">
+
+                    `[0:3]`
+                    <span>First 3 characters</span>
+
+                </button>
+
+
+                <button class="example-btn" data-start="1" data-stop="5" data-step="1">
+
+                    `[1:5]`
+                    <span>Characters 1 to 4</span>
+
+                </button>
+
+
+                <button class="example-btn" data-start="" data-stop="" data-step="-1">
+
+                    `[::-1]`
+                    <span>Reverse string</span>
+
+                </button>
+
+
+                <button class="example-btn" data-start="0" data-stop="" data-step="2">
+
+                    `[::2]`
+                    <span>Every 2nd character</span>
+
+                </button>
+
+
+                <button class="example-btn" data-start="-4" data-stop="" data-step="1">
+
+                    `[-4:]`
+                    <span>Last 4 characters</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Challenge -->
+        <section class="card challenge-card">
+
+            <h2>🧠 Test Your Understanding</h2>
+
+            <p id="question">
+                Which character is present at index 2?
+            </p>
+
+            <div id="challengeOptions" class="options">
+            </div>
+
+            <div id="challengeResult" class="challenge-result">
+            </div>
+
+            <button id="nextQuestionBtn" class="next-button">
+
+                Next Question →
+
+            </button>
+
+        </section>
+
+
+        <!-- Key Concepts -->
+        <section class="card concepts">
+
+            <h2>📚 Remember</h2>
+
+            <div class="concept-grid">
+
+                <div class="concept">
+                    <strong>Indexing</strong>
+                    <p>
+                        Accesses a single character.
+                    </p>
+
+                    <code>
+                        text[2]
+                    </code>
+                </div>
+
+
+                <div class="concept">
+                    <strong>Slicing</strong>
+                    <p>
+                        Extracts a sequence of characters.
+                    </p>
+
+                    <code>
+                        text[1:4]
+                    </code>
+                </div>
+
+
+                <div class="concept">
+                    <strong>Start</strong>
+                    <p>
+                        Included in the slice.
+                    </p>
+                </div>
+
+
+                <div class="concept">
+                    <strong>Stop</strong>
+                    <p>
+                        Excluded from the slice.
+                    </p>
+                </div>
+
+
+                <div class="concept">
+                    <strong>Step</strong>
+                    <p>
+                        Controls the jump between indexes.
+                    </p>
+                </div>
+
+
+                <div class="concept">
+                    <strong>Negative Index</strong>
+                    <p>
+                        Starts counting from the end.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="exercise-section">
+            <h2>📝 Practice Exercises – Indexing & Slicing</h2>
+
+            <p class="exercise-intro">
+                Test your understanding of Python string indexing and slicing.
+                Predict the output for each question before checking your answer.
+            </p>
+
+            <div class="exercise-card">
+                <h3>Question 1</h3>
+                <pre><code>s = "Python"
+print(s[0])</code></pre>
+
+                <button onclick="showAnswer(1)">Show Answer</button>
+                <p id="answer1" class="answer">Answer: P</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 2</h3>
+                <pre><code>s = "Python"
+print(s[3])</code></pre>
+
+                <button onclick="showAnswer(2)">Show Answer</button>
+                <p id="answer2" class="answer">Answer: h</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 3</h3>
+                <pre><code>s = "Python"
+print(s[-1])</code></pre>
+
+                <button onclick="showAnswer(3)">Show Answer</button>
+                <p id="answer3" class="answer">Answer: n</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 4</h3>
+                <pre><code>s = "Python"
+print(s[-3])</code></pre>
+
+                <button onclick="showAnswer(4)">Show Answer</button>
+                <p id="answer4" class="answer">Answer: h</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 5</h3>
+                <pre><code>s = "Python"
+print(s[1:4])</code></pre>
+
+                <button onclick="showAnswer(5)">Show Answer</button>
+                <p id="answer5" class="answer">Answer: yth</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 6</h3>
+                <pre><code>s = "Python"
+print(s[:3])</code></pre>
+
+                <button onclick="showAnswer(6)">Show Answer</button>
+                <p id="answer6" class="answer">Answer: Pyt</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 7</h3>
+                <pre><code>s = "Python"
+print(s[2:])</code></pre>
+
+                <button onclick="showAnswer(7)">Show Answer</button>
+                <p id="answer7" class="answer">Answer: thon</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 8</h3>
+                <pre><code>s = "Python"
+print(s[-4:-1])</code></pre>
+
+                <button onclick="showAnswer(8)">Show Answer</button>
+                <p id="answer8" class="answer">Answer: tho</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 9</h3>
+                <pre><code>s = "Python"
+print(s[::2])</code></pre>
+
+                <button onclick="showAnswer(9)">Show Answer</button>
+                <p id="answer9" class="answer">Answer: Pto</p>
+            </div>
+
+            <div class="exercise-card">
+                <h3>Question 10</h3>
+                <pre><code>s = "Python"
+print(s[::-1])</code></pre>
+
+                <button onclick="showAnswer(10)">Show Answer</button>
+                <p id="answer10" class="answer">Answer: nohtyP</p>
+            </div>
+        </section>
+        <footer>
+
+            🐍 Python Programming • Unit 2
+
+            <br>
+
+            Learn → Experiment → Practice → Master
+
+        </footer>
+
+    </div>
+</body>
+
+</html>

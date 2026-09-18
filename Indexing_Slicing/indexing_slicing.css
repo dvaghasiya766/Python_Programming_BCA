@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1050px, 92%);
+    margin: 40px auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 30px;
+
+    background: #e7f0ff;
+    color: #1769aa;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #667085;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(20, 40, 80, 0.08);
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #667085;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 2px solid #d8dee9;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #1769aa;
+}
+
+button {
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 10px;
+
+    background: #1769aa;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    opacity: 0.92;
+}
+
+
+/* =========================
+   INDEXING
+========================= */
+
+.index-wrapper {
+    overflow-x: auto;
+
+    padding: 25px 5px;
+}
+
+.index-title {
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.positive-title {
+    color: #1769aa;
+}
+
+.negative-title {
+    color: #c45b15;
+
+    margin-top: 8px;
+}
+
+.index-row,
+.character-row {
+    display: flex;
+
+    justify-content: center;
+
+    min-width: max-content;
+}
+
+.index-box,
+.character-box {
+    width: 65px;
+
+    margin: 3px;
+
+    text-align: center;
+}
+
+.index-box {
+    padding: 7px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.positive .index-box {
+    background: #e7f0ff;
+}
+
+.character-box {
+    padding: 16px 8px;
+
+    border: 2px solid #d8dee9;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    transition: 0.25s;
+}
+
+.character-box:hover {
+    transform: translateY(-5px);
+
+    border-color: #1769aa;
+
+    background: #eaf3ff;
+}
+
+.character-box.selected {
+    transform: translateY(-7px);
+
+    border-color: #1769aa;
+
+    background: #dcecff;
+
+    box-shadow: 0 5px 15px rgba(23, 105, 170, 0.2);
+}
+
+.index-note {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    color: #667085;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    background: #edf7ed;
+
+    border-left: 5px solid #2e8b57;
+}
+
+.result.error {
+    background: #fff0f0;
+
+    border-left-color: #d64545;
+}
+
+.result strong {
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   SLICING
+========================= */
+
+.slicing-card {
+    background:
+        linear-gradient(135deg,
+            #ffffff,
+            #f5f9ff);
+}
+
+.syntax {
+    text-align: center;
+
+    font-family: monospace;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    background: #172033;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    margin: 20px 0;
+}
+
+.slice-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.slice-input label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.slice-button {
+    margin-top: 20px;
+
+    width: 100%;
+}
+
+.slice-result {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #eef6ff;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.slice-code {
+    font-family: monospace;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.slice-output {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   SLICE VISUALIZATION
+========================= */
+
+.slice-visualization {
+    overflow-x: auto;
+
+    margin-top: 25px;
+
+    padding: 15px;
+}
+
+.slice-character {
+    display: inline-flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 3px;
+
+    min-width: 60px;
+}
+
+.slice-character .char {
+    padding: 14px;
+
+    border: 2px solid #d8dee9;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.slice-character .position {
+    font-size: 12px;
+
+    margin-top: 5px;
+
+    color: #667085;
+}
+
+.slice-character.active .char {
+    background: #dff5e5;
+
+    border-color: #2e8b57;
+
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   EXAMPLES
+========================= */
+
+.examples {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+.example-btn {
+    background: white;
+
+    color: #172033;
+
+    border: 2px solid #d8dee9;
+
+    text-align: left;
+
+    font-family: monospace;
+}
+
+.example-btn:hover {
+    border-color: #1769aa;
+
+    background: #f4f8ff;
+}
+
+.example-btn span {
+    display: block;
+
+    font-family: Arial;
+
+    font-size: 12px;
+
+    color: #667085;
+
+    margin-top: 4px;
+}
+
+
+/* =========================
+   CHALLENGE
+========================= */
+
+.challenge-card {
+    background:
+        linear-gradient(135deg,
+            #ffffff,
+            #f5f9ff);
+}
+
+#question {
+    font-size: 18px;
+
+    margin: 20px 0;
+}
+
+.options {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.option {
+    background: white;
+
+    color: #172033;
+
+    border: 2px solid #d8dee9;
+}
+
+.option.correct {
+    background: #dff5e5;
+
+    border-color: #2e8b57;
+}
+
+.option.wrong {
+    background: #ffe1e1;
+
+    border-color: #d64545;
+}
+
+.challenge-result {
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+.next-button {
+    margin-top: 18px;
+}
+
+
+/* =========================
+   CONCEPTS
+========================= */
+
+.concept-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.concept {
+    padding: 18px;
+
+    background: #f8fafc;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e8f0;
+}
+
+.concept strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.concept p {
+    color: #667085;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.concept code {
+    background: #172033;
+
+    color: white;
+
+    padding: 4px 7px;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    color: #667085;
+
+    padding: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .slice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .examples {
+        grid-template-columns: 1fr;
+    }
+
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .index-note {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 5px;
+    }
+}
+
+.exercise-section {
+    margin-top: 40px;
+}
+
+.exercise-section h2 {
+    margin-bottom: 10px;
+}
+
+.exercise-intro {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.exercise-card {
+    background: #ffffff;
+    border: 1px solid #dbe3ec;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.exercise-card h3 {
+    margin-top: 0;
+}
+
+.exercise-card pre {
+    background: #f4f6f8;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.exercise-card button {
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    margin-top: 15px;
+    font-weight: bold;
+}

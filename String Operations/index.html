@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Python String Operations</title>
+
+    <link rel="stylesheet" href="./String Operations.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <span class="badge">🐍 Python Programming</span>
+            <h1>String Operations</h1>
+            <p>
+                Learn, experiment and practice Python string methods
+                through interactive examples.
+            </p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- Learning Objective -->
+        <section class="card">
+            <h2>🎯 Learning Objectives</h2>
+
+            <p>After completing this activity, you will be able to:</p>
+
+            <ul>
+                <li>Understand commonly used Python string methods.</li>
+                <li>Apply string methods to solve programming problems.</li>
+                <li>Predict the output of string operations.</li>
+                <li>Use string methods correctly in Python programs.</li>
+            </ul>
+        </section>
+
+
+        <!-- Important Note -->
+        <section class="note">
+            <h3>💡 Remember</h3>
+
+            <p>
+                Python strings are <strong>immutable</strong>.
+                String methods do not change the original string.
+                Instead, they generally return a new string.
+            </p>
+
+            <pre><code>s = "python"
+
+result = s.upper()
+
+print(s)
+print(result)</code></pre>
+
+            <p><strong>Output:</strong></p>
+
+            <pre><code>python
+PYTHON</code></pre>
+        </section>
+
+
+        <!-- Method Categories -->
+        <section class="card">
+
+            <h2>📚 String Method Categories</h2>
+
+            <div class="category-grid">
+
+                <div class="category">
+                    🔤
+                    <strong>Case Conversion</strong>
+                    <span>upper(), lower(), title(), capitalize(), swapcase()</span>
+                </div>
+
+                <div class="category">
+                    🔍
+                    <strong>Searching</strong>
+                    <span>find(), rfind(), index(), rindex()</span>
+                </div>
+
+                <div class="category">
+                    📏
+                    <strong>Checking</strong>
+                    <span>startswith(), endswith()</span>
+                </div>
+
+                <div class="category">
+                    🔄
+                    <strong>Modify</strong>
+                    <span>replace(), strip(), lstrip(), rstrip()</span>
+                </div>
+
+                <div class="category">
+                    ✂️
+                    <strong>Split & Join</strong>
+                    <span>split(), rsplit(), splitlines(), join()</span>
+                </div>
+
+                <div class="category">
+                    🔢
+                    <strong>Validation</strong>
+                    <span>isdigit(), isalpha(), isalnum(), isspace()</span>
+                </div>
+
+                <div class="category">
+                    🧱
+                    <strong>Alignment</strong>
+                    <span>center(), ljust(), rjust()</span>
+                </div>
+
+                <div class="category">
+                    🔢
+                    <strong>Formatting</strong>
+                    <span>format(), format_map()</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Method Table -->
+        <section class="card">
+
+            <h2>📖 Common String Methods</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Method</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>🔤 Case</td>
+                            <td><code>upper()</code></td>
+                            <td>Converts string to uppercase.</td>
+                            <td><code>"hello".upper()</code> → <strong>HELLO</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔤 Case</td>
+                            <td><code>lower()</code></td>
+                            <td>Converts string to lowercase.</td>
+                            <td><code>"HELLO".lower()</code> → <strong>hello</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔤 Case</td>
+                            <td><code>title()</code></td>
+                            <td>Capitalizes the first letter of each word.</td>
+                            <td><code>"hello world".title()</code> → <strong>Hello World</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔤 Case</td>
+                            <td><code>capitalize()</code></td>
+                            <td>Capitalizes the first character.</td>
+                            <td><code>"python".capitalize()</code> → <strong>Python</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔤 Case</td>
+                            <td><code>swapcase()</code></td>
+                            <td>Swaps uppercase and lowercase characters.</td>
+                            <td><code>"PyThOn".swapcase()</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔍 Search</td>
+                            <td><code>find()</code></td>
+                            <td>Returns the first occurrence index or -1.</td>
+                            <td><code>"banana".find("a")</code> → <strong>1</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔍 Search</td>
+                            <td><code>rfind()</code></td>
+                            <td>Returns the last occurrence index.</td>
+                            <td><code>"banana".rfind("a")</code> → <strong>5</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔍 Search</td>
+                            <td><code>index()</code></td>
+                            <td>Returns the index of the first occurrence.</td>
+                            <td><code>"python".index("t")</code> → <strong>2</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔍 Search</td>
+                            <td><code>rindex()</code></td>
+                            <td>Returns the last occurrence index.</td>
+                            <td><code>"banana".rindex("a")</code> → <strong>5</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>📏 Checking</td>
+                            <td><code>startswith()</code></td>
+                            <td>Checks whether a string starts with a value.</td>
+                            <td><code>"Python".startswith("Py")</code> → <strong>True</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>📏 Checking</td>
+                            <td><code>endswith()</code></td>
+                            <td>Checks whether a string ends with a value.</td>
+                            <td><code>"Python".endswith("on")</code> → <strong>True</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔄 Modify</td>
+                            <td><code>replace()</code></td>
+                            <td>Replaces one substring with another.</td>
+                            <td><code>"a-b".replace("-", ":")</code> → <strong>a:b</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔄 Modify</td>
+                            <td><code>strip()</code></td>
+                            <td>Removes leading and trailing whitespace.</td>
+                            <td><code>" hi ".strip()</code> → <strong>hi</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔄 Modify</td>
+                            <td><code>lstrip()</code></td>
+                            <td>Removes whitespace from the left.</td>
+                            <td><code>" hi".lstrip()</code> → <strong>hi</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔄 Modify</td>
+                            <td><code>rstrip()</code></td>
+                            <td>Removes whitespace from the right.</td>
+                            <td><code>"hi ".rstrip()</code> → <strong>hi</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>✂️ Split</td>
+                            <td><code>split()</code></td>
+                            <td>Splits a string into a list.</td>
+                            <td><code>"a,b".split(",")</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>✂️ Split</td>
+                            <td><code>rsplit()</code></td>
+                            <td>Splits from the right side.</td>
+                            <td><code>"a,b,c".rsplit(",",1)</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>✂️ Join</td>
+                            <td><code>join()</code></td>
+                            <td>Joins elements using a separator.</td>
+                            <td><code>"-".join(["A","B"])</code> → <strong>A-B</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔢 Validation</td>
+                            <td><code>isdigit()</code></td>
+                            <td>Checks whether all characters are digits.</td>
+                            <td><code>"123".isdigit()</code> → <strong>True</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔢 Validation</td>
+                            <td><code>isalpha()</code></td>
+                            <td>Checks whether all characters are letters.</td>
+                            <td><code>"Python".isalpha()</code> → <strong>True</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔢 Validation</td>
+                            <td><code>isalnum()</code></td>
+                            <td>Checks whether characters are letters or digits.</td>
+                            <td><code>"Python123".isalnum()</code> → <strong>True</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔢 Validation</td>
+                            <td><code>isspace()</code></td>
+                            <td>Checks whether all characters are whitespace.</td>
+                            <td><code>" ".isspace()</code> → <strong>True</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔍 Others</td>
+                            <td><code>count()</code></td>
+                            <td>Counts occurrences of a substring.</td>
+                            <td><code>"banana".count("a")</code> → <strong>3</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔍 Others</td>
+                            <td><code>zfill()</code></td>
+                            <td>Pads a string with zeros.</td>
+                            <td><code>"5".zfill(3)</code> → <strong>005</strong></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Interactive Playground -->
+        <section class="card playground">
+
+            <h2>💻 String Method Playground</h2>
+
+            <p>
+                Enter a string, select a method and see the result.
+            </p>
+
+            <label>Enter String</label>
+
+            <input type="text" id="inputString" value="hello world" placeholder="Enter your string">
+
+            <label>Select Method</label>
+
+            <select id="method">
+
+                <option value="upper">upper()</option>
+                <option value="lower">lower()</option>
+                <option value="title">title()</option>
+                <option value="capitalize">capitalize()</option>
+                <option value="swapcase">swapcase()</option>
+                <option value="strip">strip()</option>
+                <option value="lstrip">lstrip()</option>
+                <option value="rstrip">rstrip()</option>
+                <option value="isdigit">isdigit()</option>
+                <option value="isalpha">isalpha()</option>
+                <option value="isalnum">isalnum()</option>
+                <option value="isspace">isspace()</option>
+                <option value="count">count()</option>
+
+            </select>
+
+            <button onclick="runMethod()">
+                ▶ Run Method
+            </button>
+
+            <div class="output">
+
+                <h3>Output</h3>
+
+                <pre id="output">Result will appear here...</pre>
+
+            </div>
+
+        </section>
+
+
+        <!-- Practice Exercises -->
+        <section class="card">
+
+            <h2>📝 Practice Exercises</h2>
+
+            <p>
+                Predict the output before revealing the answer.
+            </p>
+
+
+            <div class="exercise">
+
+                <h3>Question 1</h3>
+
+                <pre><code>s = "python"
+print(s.upper())</code></pre>
+
+                <button onclick="showAnswer(1)">
+                    Show Answer
+                </button>
+
+                <p id="answer1" class="answer">
+                    Answer: <strong>PYTHON</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 2</h3>
+
+                <pre><code>s = "PYTHON"
+print(s.lower())</code></pre>
+
+                <button onclick="showAnswer(2)">
+                    Show Answer
+                </button>
+
+                <p id="answer2" class="answer">
+                    Answer: <strong>python</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 3</h3>
+
+                <pre><code>s = "hello world"
+print(s.title())</code></pre>
+
+                <button onclick="showAnswer(3)">
+                    Show Answer
+                </button>
+
+                <p id="answer3" class="answer">
+                    Answer: <strong>Hello World</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 4</h3>
+
+                <pre><code>s = "banana"
+print(s.count("a"))</code></pre>
+
+                <button onclick="showAnswer(4)">
+                    Show Answer
+                </button>
+
+                <p id="answer4" class="answer">
+                    Answer: <strong>3</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 5</h3>
+
+                <pre><code>s = "Python"
+print(s.startswith("Py"))</code></pre>
+
+                <button onclick="showAnswer(5)">
+                    Show Answer
+                </button>
+
+                <p id="answer5" class="answer">
+                    Answer: <strong>True</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 6</h3>
+
+                <pre><code>s = "Python"
+print(s.endswith("on"))</code></pre>
+
+                <button onclick="showAnswer(6)">
+                    Show Answer
+                </button>
+
+                <p id="answer6" class="answer">
+                    Answer: <strong>True</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 7</h3>
+
+                <pre><code>s = "12345"
+print(s.isdigit())</code></pre>
+
+                <button onclick="showAnswer(7)">
+                    Show Answer
+                </button>
+
+                <p id="answer7" class="answer">
+                    Answer: <strong>True</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 8</h3>
+
+                <pre><code>s = "Python123"
+print(s.isalpha())</code></pre>
+
+                <button onclick="showAnswer(8)">
+                    Show Answer
+                </button>
+
+                <p id="answer8" class="answer">
+                    Answer: <strong>False</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 9</h3>
+
+                <pre><code>s = "a-b-c"
+print(s.replace("-", ":"))</code></pre>
+
+                <button onclick="showAnswer(9)">
+                    Show Answer
+                </button>
+
+                <p id="answer9" class="answer">
+                    Answer: <strong>a:b:c</strong>
+                </p>
+
+            </div>
+
+
+            <div class="exercise">
+
+                <h3>Question 10</h3>
+
+                <pre><code>s = "  Python  "
+print(s.strip())</code></pre>
+
+                <button onclick="showAnswer(10)">
+                    Show Answer
+                </button>
+
+                <p id="answer10" class="answer">
+                    Answer: <strong>Python</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Challenge -->
+        <section class="challenge">
+
+            <h2>🏆 Challenge</h2>
+
+            <p>
+                Write a Python program that accepts a student's name
+                and performs the following operations:
+            </p>
+
+            <ol>
+                <li>Convert the name to uppercase.</li>
+                <li>Convert the name to lowercase.</li>
+                <li>Display the name in title case.</li>
+                <li>Count the number of characters.</li>
+                <li>Check whether the name contains only alphabets.</li>
+            </ol>
+
+            <p>
+                <strong>Try it yourself before looking at the solution.</strong>
+            </p>
+
+        </section>
+
+
+        <!-- Completion -->
+        <section class="completion">
+
+            <h2>🎉 Activity Completed!</h2>
+
+            <p>
+                You have learned important Python string operations.
+            </p>
+
+            <p>
+                <strong>
+                    Learn → Experiment → Predict → Practice → Apply
+                </strong>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>🐍 Python Programming | Unit 2 | BCA629</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
