@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Header */
+
+header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+
+  color: white;
+  text-align: center;
+  padding: 38px 20px;
+}
+
+header h1 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 17px;
+}
+
+/* Main */
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  color: #1d4ed8;
+  margin-bottom: 15px;
+}
+
+/* Operator Grid */
+
+.operator-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+  gap: 15px;
+}
+
+.operator-item {
+  padding: 20px;
+
+  background: #eff6ff;
+
+  border-radius: 10px;
+
+  border-left: 5px solid #2563eb;
+}
+
+.operator-item span {
+  display: inline-flex;
+
+  width: 30px;
+  height: 30px;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #2563eb;
+
+  color: white;
+
+  border-radius: 50%;
+
+  margin-bottom: 8px;
+}
+
+.operator-item h3 {
+  color: #1e3a8a;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #d1d5db;
+
+  padding: 12px;
+
+  text-align: left;
+}
+
+th {
+  background: #dbeafe;
+
+  color: #1e3a8a;
+}
+
+tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* Code */
+
+.code-box {
+  background: #111827;
+
+  color: #e5e7eb;
+
+  padding: 18px;
+
+  margin: 15px 0;
+
+  border-radius: 8px;
+
+  font-family: Consolas, monospace;
+
+  overflow-x: auto;
+}
+
+code {
+  background: #eef2ff;
+
+  color: #3730a3;
+
+  padding: 2px 5px;
+
+  border-radius: 4px;
+}
+
+.code-box code {
+  background: transparent;
+
+  color: inherit;
+
+  padding: 0;
+}
+
+/* Forms */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+
+  font-weight: bold;
+
+  margin-bottom: 7px;
+}
+
+input,
+select {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 7px;
+
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+
+  border-color: #2563eb;
+}
+
+/* Buttons */
+
+button {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Results */
+
+.result {
+  margin-top: 20px;
+
+  padding: 18px;
+
+  background: #eff6ff;
+
+  border-left: 5px solid #2563eb;
+
+  border-radius: 6px;
+
+  min-height: 55px;
+}
+
+/* Lists */
+
+ul,
+ol {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 11px;
+}
+
+/* Learning Flow */
+
+.learning {
+  text-align: center;
+}
+
+.flow {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+}
+
+.flow span {
+  background: #dbeafe;
+
+  color: #1e3a8a;
+
+  padding: 10px 16px;
+
+  border-radius: 20px;
+
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+
+  background: #111827;
+
+  color: white;
+
+  padding: 20px;
+
+  margin-top: 40px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  main {
+    width: 94%;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .flow strong {
+    display: none;
+  }
+}

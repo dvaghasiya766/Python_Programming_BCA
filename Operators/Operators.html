@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Operators Activity</title>
+    <link rel="stylesheet" href="./Operators.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🐍 Python Operators</h1>
+        <p>Interactive Learning Activity | Unit 2 – Python Data Types</p>
+    </header>
+
+    <main>
+
+        <!-- Introduction -->
+        <section class="card">
+            <h2>📚 What is an Operator?</h2>
+
+            <p>
+                Operators are special symbols or keywords used to perform
+                operations on one or more values called <strong>operands</strong>.
+            </p>
+
+            <div class="code-box">
+                <code>
+                    10 + 5
+                </code>
+            </div>
+
+            <p>
+                Here, <strong>10</strong> and <strong>5</strong> are operands,
+                while <strong>+</strong> is the operator.
+            </p>
+        </section>
+
+
+        <!-- Types -->
+        <section class="card">
+
+            <h2>🔢 Types of Operators</h2>
+
+            <div class="operator-grid">
+
+                <div class="operator-item">
+                    <span>1</span>
+                    <h3>Arithmetic</h3>
+                    <p>Perform mathematical calculations.</p>
+                </div>
+
+                <div class="operator-item">
+                    <span>2</span>
+                    <h3>Comparison</h3>
+                    <p>Compare two values.</p>
+                </div>
+
+                <div class="operator-item">
+                    <span>3</span>
+                    <h3>Logical</h3>
+                    <p>Combine conditional expressions.</p>
+                </div>
+
+                <div class="operator-item">
+                    <span>4</span>
+                    <h3>Bitwise</h3>
+                    <p>Perform operations on individual bits.</p>
+                </div>
+
+                <div class="operator-item">
+                    <span>5</span>
+                    <h3>Assignment</h3>
+                    <p>Assign and update values.</p>
+                </div>
+
+                <div class="operator-item">
+                    <span>6</span>
+                    <h3>Identity</h3>
+                    <p>Check object identity.</p>
+                </div>
+
+                <div class="operator-item">
+                    <span>7</span>
+                    <h3>Membership</h3>
+                    <p>Check whether a value exists.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Arithmetic -->
+        <section class="card">
+
+            <h2>➕ Arithmetic Operators</h2>
+
+            <p>
+                Arithmetic operators are used to perform mathematical
+                calculations.
+            </p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Example</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>+</td>
+                        <td>Addition</td>
+                        <td>5 + 2</td>
+                        <td>7</td>
+                    </tr>
+
+                    <tr>
+                        <td>-</td>
+                        <td>Subtraction</td>
+                        <td>5 - 2</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>*</td>
+                        <td>Multiplication</td>
+                        <td>5 * 2</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>/</td>
+                        <td>Division</td>
+                        <td>5 / 2</td>
+                        <td>2.5</td>
+                    </tr>
+
+                    <tr>
+                        <td>%</td>
+                        <td>Modulo</td>
+                        <td>5 % 2</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>**</td>
+                        <td>Exponentiation</td>
+                        <td>5 ** 2</td>
+                        <td>25</td>
+                    </tr>
+
+                    <tr>
+                        <td>//</td>
+                        <td>Floor Division</td>
+                        <td>5 // 2</td>
+                        <td>2</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Comparison -->
+        <section class="card">
+
+            <h2>⚖️ Comparison Operators</h2>
+
+            <p>
+                Comparison operators compare two values and return
+                <strong>True</strong> or <strong>False</strong>.
+            </p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>==</td>
+                        <td>Equal to</td>
+                        <td>5 == 2 → False</td>
+                    </tr>
+
+                    <tr>
+                        <td>!=</td>
+                        <td>Not equal to</td>
+                        <td>5 != 2 → True</td>
+                    </tr>
+
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Greater than</td>
+                        <td>5 &gt; 2 → True</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Less than</td>
+                        <td>5 &lt; 2 → False</td>
+                    </tr>
+
+                    <tr>
+                        <td>&gt;=</td>
+                        <td>Greater than or equal</td>
+                        <td>5 &gt;= 2 → True</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;=</td>
+                        <td>Less than or equal</td>
+                        <td>5 &lt;= 2 → False</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Logical -->
+        <section class="card">
+
+            <h2>🧠 Logical Operators</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>and</td>
+                        <td>True if both conditions are True</td>
+                        <td>True and False → False</td>
+                    </tr>
+
+                    <tr>
+                        <td>or</td>
+                        <td>True if at least one condition is True</td>
+                        <td>True or False → True</td>
+                    </tr>
+
+                    <tr>
+                        <td>not</td>
+                        <td>Reverses the Boolean result</td>
+                        <td>not True → False</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Bitwise -->
+        <section class="card">
+
+            <h2>💻 Bitwise Operators</h2>
+
+            <p>
+                Bitwise operators perform operations on the binary
+                representation of integers.
+            </p>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Example</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>&amp;</td>
+                        <td>AND</td>
+                        <td>5 &amp; 2</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>|</td>
+                        <td>OR</td>
+                        <td>5 | 2</td>
+                        <td>7</td>
+                    </tr>
+
+                    <tr>
+                        <td>^</td>
+                        <td>XOR</td>
+                        <td>5 ^ 2</td>
+                        <td>7</td>
+                    </tr>
+
+                    <tr>
+                        <td>~</td>
+                        <td>NOT</td>
+                        <td>~10</td>
+                        <td>-11</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;&lt;</td>
+                        <td>Left Shift</td>
+                        <td>5 &lt;&lt; 2</td>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <td>&gt;&gt;</td>
+                        <td>Right Shift</td>
+                        <td>5 &gt;&gt; 2</td>
+                        <td>1</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Assignment -->
+        <section class="card">
+
+            <h2>📝 Assignment Operators</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Example</th>
+                        <th>Equivalent To</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>=</td>
+                        <td>x = 10</td>
+                        <td>x = 10</td>
+                    </tr>
+
+                    <tr>
+                        <td>+=</td>
+                        <td>x += 5</td>
+                        <td>x = x + 5</td>
+                    </tr>
+
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= 5</td>
+                        <td>x = x - 5</td>
+                    </tr>
+
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= 5</td>
+                        <td>x = x * 5</td>
+                    </tr>
+
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= 5</td>
+                        <td>x = x / 5</td>
+                    </tr>
+
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= 5</td>
+                        <td>x = x % 5</td>
+                    </tr>
+
+                    <tr>
+                        <td>//=</td>
+                        <td>x //= 5</td>
+                        <td>x = x // 5</td>
+                    </tr>
+
+                    <tr>
+                        <td>**=</td>
+                        <td>x **= 2</td>
+                        <td>x = x ** 2</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Identity -->
+        <section class="card">
+
+            <h2>🧩 Identity Operators</h2>
+
+            <p>
+                Identity operators check whether two variables refer to
+                the same object.
+            </p>
+
+            <div class="code-box">
+                <code>
+                    a = [1, 2, 3]<br>
+                    b = a<br><br>
+
+                    print(a is b)<br>
+                    print(a is not b)
+                </code>
+            </div>
+
+            <p>
+                <strong>is</strong> checks object identity, while
+                <strong>is not</strong> checks whether two objects are different.
+            </p>
+
+        </section>
+
+
+        <!-- Membership -->
+        <section class="card">
+
+            <h2>🔍 Membership Operators</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>in</td>
+                        <td>Checks whether a value exists</td>
+                        <td>"Py" in "Python" → True</td>
+                    </tr>
+
+                    <tr>
+                        <td>not in</td>
+                        <td>Checks whether a value does not exist</td>
+                        <td>"Java" not in "Python" → True</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Interactive Playground -->
+        <section class="card">
+
+            <h2>🎯 Interactive Operator Playground</h2>
+
+            <p>
+                Enter two values and select an operator to see the result.
+            </p>
+
+            <div class="form-group">
+
+                <label for="value1">
+                    First Value:
+                </label>
+
+                <input type="text" id="value1" placeholder="Example: 10">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="operator">
+                    Select Operator:
+                </label>
+
+                <select id="operator">
+
+                    <optgroup label="Arithmetic">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                        <option value="**">**</option>
+                        <option value="//">//</option>
+                    </optgroup>
+
+                    <optgroup label="Comparison">
+                        <option value="==">==</option>
+                        <option value="!=">!=</option>
+                        <option value=">">&gt;</option>
+                        <option value="<">&lt;</option>
+                        <option value=">=">&gt;=</option>
+                        <option value="<=">&lt;=</option>
+                    </optgroup>
+
+                    <optgroup label="Logical">
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                        <option value="not">not</option>
+                    </optgroup>
+
+                    <optgroup label="Bitwise">
+                        <option value="&">&amp;</option>
+                        <option value="|">|</option>
+                        <option value="^">^</option>
+                        <option value="<<">&lt;&lt;</option>
+                        <option value=">>">&gt;&gt;</option>
+                    </optgroup>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="value2">
+                    Second Value:
+                </label>
+
+                <input type="text" id="value2" placeholder="Example: 3">
+
+            </div>
+
+
+            <button onclick="calculateOperator()">
+                Calculate
+            </button>
+
+
+            <div id="operatorResult" class="result">
+                Result will appear here.
+            </div>
+
+        </section>
+
+
+        <!-- Assignment Playground -->
+        <section class="card">
+
+            <h2>🔄 Assignment Operator Playground</h2>
+
+            <p>
+                Enter an initial value and select an assignment operator.
+            </p>
+
+            <div class="form-group">
+
+                <label for="assignValue">
+                    Initial Value:
+                </label>
+
+                <input type="number" id="assignValue" value="10">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="assignOperator">
+                    Assignment Operator:
+                </label>
+
+                <select id="assignOperator">
+
+                    <option value="=">=</option>
+                    <option value="+=">+=</option>
+                    <option value="-=">-=</option>
+                    <option value="*=">*=</option>
+                    <option value="/=">/=</option>
+                    <option value="%=">%=</option>
+                    <option value="//=">//=</option>
+                    <option value="**=">**=</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="assignNumber">
+                    Value:
+                </label>
+
+                <input type="number" id="assignNumber" value="5">
+
+            </div>
+
+
+            <button onclick="calculateAssignment()">
+                Apply Operator
+            </button>
+
+
+            <div id="assignmentResult" class="result">
+                Result will appear here.
+            </div>
+
+        </section>
+
+
+        <!-- Important Concepts -->
+        <section class="card">
+
+            <h2>⚠️ Important Concepts</h2>
+
+            <ul>
+
+                <li>
+                    <strong>/</strong> always performs true division and
+                    generally returns a float.
+                </li>
+
+                <li>
+                    <strong>//</strong> performs floor division.
+                </li>
+
+                <li>
+                    <strong>%</strong> returns the remainder.
+                </li>
+
+                <li>
+                    <strong>==</strong> compares values.
+                </li>
+
+                <li>
+                    <strong>is</strong> checks object identity.
+                </li>
+
+                <li>
+                    <strong>in</strong> checks membership.
+                </li>
+
+                <li>
+                    <strong>and, or, not</strong> are logical operators.
+                </li>
+
+                <li>
+                    Bitwise operators work on integer bits.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Exercises -->
+        <section class="card">
+
+            <h2>📝 Practice Exercises – 30 Questions</h2>
+
+            <p>
+                Solve the following questions in Python and verify your output.
+            </p>
+
+            <ol>
+
+                <li>Write a program to add two numbers using the <code>+</code> operator.</li>
+
+                <li>Write a program to subtract two numbers using the <code>-</code> operator.</li>
+
+                <li>Write a program to calculate the product of two numbers.</li>
+
+                <li>Write a program to divide two numbers and display the result.</li>
+
+                <li>Write a program to find the remainder when 25 is divided by 4.</li>
+
+                <li>Write a program to calculate <code>2 ** 5</code>.</li>
+
+                <li>Write a program to perform floor division of 25 by 4.</li>
+
+                <li>Take two numbers from the user and perform all arithmetic operations.</li>
+
+                <li>Write a program to check whether two numbers are equal.</li>
+
+                <li>Write a program to find the greater of two numbers using a comparison operator.</li>
+
+                <li>Check whether a given number is greater than or equal to 18.</li>
+
+                <li>Take marks from the user and check whether the marks are greater than or equal to 40.</li>
+
+                <li>Evaluate <code>True and False</code>.</li>
+
+                <li>Evaluate <code>True or False</code>.</li>
+
+                <li>Evaluate <code>not True</code> and <code>not False</code>.</li>
+
+                <li>Write a program to check whether a number is between 10 and 50 using <code>and</code>.</li>
+
+                <li>Write a program to check whether a number is less than 10 or greater than 100 using <code>or</code>.
+                </li>
+
+                <li>Find the result of <code>5 &amp; 3</code>.</li>
+
+                <li>Find the result of <code>5 | 3</code>.</li>
+
+                <li>Find the result of <code>5 ^ 3</code>.</li>
+
+                <li>Find the result of <code>~10</code>.</li>
+
+                <li>Find the result of <code>5 &lt;&lt; 2</code>.</li>
+
+                <li>Find the result of <code>20 &gt;&gt; 2</code>.</li>
+
+                <li>Create a variable <code>x = 10</code> and increase it by 5 using <code>+=</code>.</li>
+
+                <li>Create a variable <code>x = 20</code> and decrease it by 7 using <code>-=</code>.</li>
+
+                <li>Create a variable <code>x = 5</code> and calculate its square using <code>**=</code>.</li>
+
+                <li>Create a list and demonstrate the difference between <code>==</code> and <code>is</code>.</li>
+
+                <li>Check whether the substring <code>"Py"</code> exists in <code>"Python Programming"</code> using
+                    <code>in</code>.
+                </li>
+
+                <li>Check whether <code>"Java"</code> does not exist in <code>"Python Programming"</code> using
+                    <code>not in</code>.
+                </li>
+
+                <li>
+                    Take two numbers from the user and create a program that demonstrates
+                    arithmetic, comparison, logical, and assignment operators.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- Learning Flow -->
+        <section class="card learning">
+
+            <h2>🎯 Learning Flow</h2>
+
+            <div class="flow">
+
+                <span>📖 Learn</span>
+                <strong>→</strong>
+
+                <span>👀 Observe</span>
+                <strong>→</strong>
+
+                <span>🎯 Experiment</span>
+                <strong>→</strong>
+
+                <span>💻 Code</span>
+                <strong>→</strong>
+
+                <span>📝 Practice</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            🐍 Python Programming | BCA629 |
+            Unit 2 – Python Data Types
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
