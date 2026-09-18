@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Collections Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" data-tab="home"><span class="mark">&lt;/&gt;</span><span>Python <b>Collections</b>
+        Lab<small>Learn → Visualize → Simulate → Trace</small></span></a>
+    <div class="progress"><span id="progressText">0 topics explored</span>
+      <div class="meter"><i id="progressBar"></i></div>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Main navigation">
+    <button class="tab active" data-tab="home">Home</button><button class="tab" data-tab="list">List</button><button
+      class="tab" data-tab="tuple">Tuple</button><button class="tab" data-tab="set">Set</button><button class="tab"
+      data-tab="dictionary">Dictionary</button><button class="tab" data-tab="comparison">Compare</button><button
+      class="tab" data-tab="mutability">Mutability</button><button class="tab"
+      data-tab="operations">Operations</button><button class="tab" data-tab="practice">Practice</button><button
+      class="tab" data-tab="quiz">Quiz</button><button class="tab" data-tab="cheatsheet">Cheat Sheet</button>
+  </nav>
+
+  <main>
+    <section class="view active" id="home">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">PYTHON DATA STRUCTURES · UNIT LAB</p>
+          <h1>Write code with <em>confidence.</em></h1>
+          <p>Collections are more than syntax. Run an operation, follow Python’s trace, and watch the object change
+            state.</p><button class="primary jump" data-tab="simulator">Open the simulator <span>→</span></button>
+        </div>
+        <div class="hero-visual">
+          <div class="terminal">
+            <p><span>01</span> cart = ["Book", "Pen"]</p>
+            <p class="selected"><span>02</span> cart.append("Bag")</p>
+            <p><span>03</span> <b>→</b> ["Book", "Pen", "Bag"]</p>
+          </div>
+          <div class="float-card">✓ Object changed<br><small>Lists are mutable</small></div>
+        </div>
+      </div>
+      <div class="section-title">
+        <p class="eyebrow">CHOOSE A COLLECTION</p>
+        <h2>Four tools, four different jobs</h2>
+      </div>
+      <div class="structure-grid" id="homeCards"></div>
+      <section class="lab-card use-tool">
+        <div>
+          <p class="eyebrow">QUICK DECISION ASSISTANT</p>
+          <h2>Which one should I use?</h2>
+          <p id="decisionQuestion">Do you need key → value relationships?</p>
+        </div>
+        <div><button class="choice" data-choice="dictionary">Yes</button><button class="choice" data-choice="next">No /
+            Not sure</button></div>
+        <p id="decisionAnswer" class="decision-answer" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <section class="view module-view" id="list"></section>
+    <section class="view module-view" id="tuple"></section>
+    <section class="view module-view" id="set"></section>
+    <section class="view module-view" id="dictionary"></section>
+
+    <section class="view" id="simulator" hidden>
+      <div class="section-title">
+        <p class="eyebrow">UNIVERSAL OPERATION SIMULATOR</p>
+        <h1>Run a collection experiment</h1>
+        <p>Every simulation makes the before → operation → after journey visible.</p>
+      </div>
+      <div class="sim-layout">
+        <aside class="control-panel"><label>1. Data type<select id="typeSelect"
+              aria-label="Data type"></select></label><label>2. Operation<select id="operationSelect"
+              aria-label="Operation"></select></label><label>3. Initial data<textarea id="dataInput" rows="3"
+              aria-label="Initial data"></textarea></label><button class="primary" id="runButton">▶ Run
+            simulation</button>
+          <p class="hint">Choose a supported operation to explore its execution trace.</p>
+        </aside>
+        <div class="simulation">
+          <div class="code-panel">
+            <div class="panel-label">PYTHON CODE</div>
+            <pre id="codeDisplay"></pre>
+          </div>
+          <div class="state-flow">
+            <article>
+              <p>BEFORE</p>
+              <div id="beforeVisual" class="visual"></div>
+            </article>
+            <div class="arrow">↓<small id="operationLabel">operation</small>↓</div>
+            <article>
+              <p id="outcomeLabel">AFTER</p>
+              <div id="afterVisual" class="visual"></div>
+            </article>
+          </div>
+          <div id="errorBox" class="error-box" hidden></div>
+        </div>
+        <aside class="trace-panel">
+          <div class="trace-head">
+            <div>
+              <p class="panel-label">EXECUTION TRACE</p>
+              <h3>Step by step</h3>
+            </div><span id="stepCounter">1 / 1</span>
+          </div>
+          <ol id="traceList"></ol>
+          <div class="trace-controls"><button id="prevStep" title="Previous step">←</button><button id="playStep"
+              title="Play trace">▶</button><button id="nextStep" title="Next step">→</button><button id="resetStep"
+              title="Restart trace">↺</button></div>
+        </aside>
+      </div>
+      <div class="watch-grid">
+        <article class="watch-card">
+          <p class="panel-label">VARIABLE WATCH</p>
+          <div id="variableWatch"></div>
+        </article>
+        <article class="watch-card">
+          <p class="panel-label">TYPE WATCH</p>
+          <div id="typeWatch"></div>
+        </article>
+        <article class="watch-card console">
+          <p class="panel-label">OUTPUT</p>
+          <pre id="outputConsole">Run a simulation to see output.</pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="operations">
+      <div class="section-title">
+        <p class="eyebrow">PRACTICAL REFERENCE</p>
+        <h1>Operations & expected output</h1>
+        <p>Search a method, copy the example, and run it in your own Python environment.</p>
+      </div><input id="operationSearch" class="search" placeholder="Search append, get, union, map, conversion…">
+      <div class="operation-grid" id="operationGrid"></div>
+    </section>
+    <section class="view" id="comparison">
+      <div class="section-title">
+        <p class="eyebrow">COMPARISON LAB</p>
+        <h1>How collections differ</h1>
+        <p>Click a row for a practical explanation.</p>
+      </div>
+      <div class="comparison-wrap">
+        <table id="comparisonTable"></table>
+      </div>
+      <div class="callout" id="comparisonExplanation">Select a row to inspect a collection property.</div>
+    </section>
+    <section class="view" id="mutability">
+      <div class="section-title">
+        <p class="eyebrow">CORE CONCEPT</p>
+        <h1>Mutability is about the object</h1>
+        <p>It means whether an object’s contents can change after it is created—not whether a variable can be
+          reassigned.</p>
+      </div>
+      <div class="mutability-grid" id="mutabilityGrid"></div>
+      <div class="callout"><b>Important edge case:</b> a tuple cannot replace one of its references, but a mutable
+        object inside it still can change: <code>data = ([1, 2], 10); data[0].append(3)</code>.</div>
+    </section>
+
+    <section class="view" id="practice">
+      <div class="section-title">
+        <p class="eyebrow">ADAPTIVE PRACTICE STUDIO</p>
+        <h1>Write, trace, and apply Python</h1>
+        <p>Educational code checker: it recognizes supported Python concepts; it is not a full Python interpreter.</p>
+      </div>
+      <div class="practice-modes" id="practiceModes"><button data-mode="predict" class="active">1. Predict
+          Output</button><button data-mode="fill">2. Fill the Code</button><button data-mode="debug">3.
+          Debug</button><button data-mode="write">4. Write Code</button><button data-mode="trace">5.
+          Trace</button><button data-mode="transform">6. Transform</button><button data-mode="classwork">7.
+          Classwork</button><button data-mode="challenge">8. Challenge</button></div>
+      <article class="question-card"><span id="practiceLevel" class="pill">Level 1 — Recognition</span>
+        <h2 id="practiceQuestion"></h2>
+        <pre id="practiceCode"></pre>
+        <div id="practiceChoices" class="choices"></div><textarea id="codeAnswer" class="code-answer" rows="6"
+          placeholder="Write your Python answer here…" hidden></textarea><button class="primary" id="checkCode"
+          hidden>Check my code</button>
+        <p id="practiceFeedback" aria-live="polite"></p><button class="secondary" id="nextPractice">Next challenge
+          →</button>
+      </article>
+      <section class="skill-card">
+        <p class="panel-label">LIST MASTERY · SAVED LOCALLY</p>
+        <div id="skillProgress" class="skill-progress"></div>
+      </section>
+    </section>
+    <section class="view" id="quiz">
+      <div class="section-title">
+        <p class="eyebrow">KNOWLEDGE CHECK</p>
+        <h1>Collections quiz</h1>
+        <p>Score is saved in this browser.</p>
+      </div>
+      <article class="question-card">
+        <p class="pill">QUESTION <span id="quizNumber">1</span> / 5</p>
+        <h2 id="quizQuestion"></h2>
+        <div id="quizChoices" class="choices"></div>
+        <p id="quizFeedback" aria-live="polite"></p><button class="primary" id="nextQuiz">Next question →</button>
+      </article>
+    </section>
+    <section class="view" id="cheatsheet">
+      <div class="section-title">
+        <p class="eyebrow">REFERENCE DESK</p>
+        <h1>Searchable cheat sheet</h1>
+      </div><input id="cheatSearch" class="search" placeholder="Search syntax, purpose, or collection…"
+        aria-label="Search cheat sheet">
+      <div class="cheat-grid" id="cheatGrid"></div>
+    </section>
+  </main>
+  <footer>Python Collections Lab · Think in states, not just methods.</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
